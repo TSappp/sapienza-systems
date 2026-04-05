@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const siteUrl = "https://sapienzasystems.com";
+const siteUrl = "https://www.sapienzasystems.com";
 
 export const metadata: Metadata = {
   title: {

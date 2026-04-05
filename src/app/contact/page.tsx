@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -90,130 +91,7 @@ export default function ContactPage() {
 
             {/* Contact Form */}
             <div className="md:col-span-2">
-              <h2 className="text-2xl font-bold text-stone-900 mb-6">
-                Send a Message
-              </h2>
-              {/*
-                FORM BACKEND: Connect this form to one of the following:
-
-                Option 1 \u2014 Formspree (fastest):
-                  Add action="https://formspree.io/f/YOUR_FORM_ID" method="POST" to the <form> tag.
-                  Sign up at https://formspree.io and create a form to get your ID.
-
-                Option 2 \u2014 Next.js API route:
-                  Create src/app/api/contact/route.ts with a POST handler that
-                  sends email via Resend, SendGrid, or similar. Then submit via
-                  fetch('/api/contact', { method: 'POST', body: ... }).
-
-                Option 3 \u2014 Netlify Forms:
-                  Add data-netlify="true" and name="contact" to the <form> tag.
-
-                Until connected, the form renders but does not submit.
-              */}
-              <form className="space-y-6">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                  <div>
-                    <label
-                      htmlFor="name"
-                      className="block text-sm font-medium text-stone-700 mb-1.5"
-                    >
-                      Name
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      required
-                      className="w-full px-4 py-3 border border-stone-300 rounded-lg text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-amber-700 focus:border-transparent transition-shadow"
-                      placeholder="Your name"
-                    />
-                  </div>
-                  <div>
-                    <label
-                      htmlFor="email"
-                      className="block text-sm font-medium text-stone-700 mb-1.5"
-                    >
-                      Email
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      required
-                      className="w-full px-4 py-3 border border-stone-300 rounded-lg text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-amber-700 focus:border-transparent transition-shadow"
-                      placeholder="you@example.com"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="company"
-                    className="block text-sm font-medium text-stone-700 mb-1.5"
-                  >
-                    Company / Organization{" "}
-                    <span className="text-stone-400">(optional)</span>
-                  </label>
-                  <input
-                    type="text"
-                    id="company"
-                    name="company"
-                    className="w-full px-4 py-3 border border-stone-300 rounded-lg text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-amber-700 focus:border-transparent transition-shadow"
-                    placeholder="Your company or organization"
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="service"
-                    className="block text-sm font-medium text-stone-700 mb-1.5"
-                  >
-                    What are you interested in?
-                  </label>
-                  <select
-                    id="service"
-                    name="service"
-                    className="w-full px-4 py-3 border border-stone-300 rounded-lg text-sm text-stone-900 focus:outline-none focus:ring-2 focus:ring-amber-700 focus:border-transparent transition-shadow bg-white"
-                  >
-                    <option value="">Select a service area</option>
-                    <option value="hospitality">
-                      Hospitality Operations Consulting
-                    </option>
-                    <option value="sops">
-                      SOPs, Playbooks &amp; Training Systems
-                    </option>
-                    <option value="technical">
-                      Technical Documentation &amp; Workflow Support
-                    </option>
-                    <option value="ai">AI Workflow Setup</option>
-                    <option value="other">Not sure yet / Other</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="message"
-                    className="block text-sm font-medium text-stone-700 mb-1.5"
-                  >
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows={5}
-                    required
-                    className="w-full px-4 py-3 border border-stone-300 rounded-lg text-sm text-stone-900 placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-amber-700 focus:border-transparent transition-shadow resize-y"
-                    placeholder="What does your team do? What's not working? What would 'fixed' look like?"
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  className="inline-block px-8 py-3 bg-amber-700 text-white text-sm font-semibold rounded hover:bg-amber-800 transition-colors"
-                >
-                  Send Message
-                </button>
-              </form>
+              <ContactForm />
             </div>
           </div>
         </div>

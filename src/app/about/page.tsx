@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import SectionHeading from "@/components/SectionHeading";
 import Button from "@/components/Button";
+import ProfilePhoto from "@/components/ProfilePhoto";
 
 export const metadata: Metadata = {
   title: "About",
@@ -61,6 +62,7 @@ const approach = [
 export default function AboutPage() {
   return (
     <>
+      {/* Hero */}
       <section className="bg-stone-900 text-white">
         <div className="max-w-6xl mx-auto px-6 py-20 md:py-28">
           <p className="text-amber-400 text-sm font-semibold uppercase tracking-wider mb-4">
@@ -72,22 +74,12 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Bio */}
       <section className="py-20 md:py-28">
         <div className="max-w-4xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            {/*
-              PROFILE PHOTO: Replace the div below with:
-              <Image src="/images/thomas-sapienza.jpg" alt="Thomas Sapienza" ... />
-              Place your photo at: public/images/thomas-sapienza.jpg
-              Recommended: 600x800px or similar 3:4 ratio, professional headshot
-            */}
             <div className="md:col-span-1">
-              <div className="aspect-[3/4] bg-stone-900 rounded-lg flex items-center justify-center">
-                <div className="text-center">
-                  <span className="text-stone-500 text-3xl font-bold tracking-tight block">TS</span>
-                  <span className="text-stone-600 text-xs mt-1 block">Sapienza Systems</span>
-                </div>
-              </div>
+              <ProfilePhoto />
             </div>
 
             <div className="md:col-span-2">
@@ -107,15 +99,12 @@ export default function AboutPage() {
                   and a short staff.
                 </p>
                 <p>
-                  I&rsquo;ve built my career from the ground up across
-                  hospitality, education, and technical operations\u2014from
-                  busboy to bartender, from student to teacher, and from
-                  manufacturing tech to process development scientist in a cGMP
-                  environment. That experience is why I approach operations the
-                  way I do: not from abstraction, but from the level where
-                  systems actually succeed or fail. I build training,
-                  documentation, and workflows that hold up in real-world
-                  execution.
+                  Alongside hospitality, I built a parallel track in education
+                  and scientific operations\u2014eventually working as a process
+                  development scientist in a cGMP environment. That dual
+                  background is why I approach operations differently: not from
+                  abstraction, but from the level where systems actually succeed
+                  or fail.
                 </p>
                 <p>
                   Now I do the same thing for clients. I walk into an operation,
@@ -125,7 +114,7 @@ export default function AboutPage() {
                   whether you&rsquo;re in the building or not.
                 </p>
                 <p>
-                  The problems are the same everywhere&mdash;restaurants, labs,
+                  The problems are the same everywhere\u2014restaurants, labs,
                   growing companies. Unclear processes. Tribal knowledge.
                   Inconsistent training. Documentation that doesn&rsquo;t exist
                   or doesn&rsquo;t get used. That&rsquo;s why I started
@@ -154,6 +143,7 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Career Timeline */}
       <section className="py-20 md:py-28 bg-stone-50 border-y border-stone-200">
         <div className="max-w-4xl mx-auto px-6">
           <SectionHeading
@@ -163,16 +153,23 @@ export default function AboutPage() {
           />
           <div className="space-y-8">
             {timeline.map((item, i) => (
-              <div key={i} className="flex gap-6 relative">
+              <div
+                key={i}
+                className="flex gap-6 relative"
+              >
                 <div className="flex-shrink-0 w-24 text-right">
-                  <span className="text-sm font-semibold text-amber-700">{item.period}</span>
+                  <span className="text-sm font-semibold text-amber-700">
+                    {item.period}
+                  </span>
                 </div>
                 <div className="flex-shrink-0 w-px bg-stone-300 relative">
                   <div className="absolute top-1.5 left-1/2 -translate-x-1/2 w-2.5 h-2.5 rounded-full bg-stone-900" />
                 </div>
                 <div className="pb-2">
                   <h3 className="font-semibold text-stone-900">{item.title}</h3>
-                  <p className="mt-1 text-stone-600 text-sm leading-relaxed">{item.description}</p>
+                  <p className="mt-1 text-stone-600 text-sm leading-relaxed">
+                    {item.description}
+                  </p>
                 </div>
               </div>
             ))}
@@ -180,6 +177,7 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* How I Work */}
       <section className="py-20 md:py-28">
         <div className="max-w-6xl mx-auto px-6">
           <SectionHeading
@@ -189,16 +187,26 @@ export default function AboutPage() {
           />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {approach.map((step, i) => (
-              <div key={step.title} className="p-6 bg-white border border-stone-200 rounded-lg">
-                <div className="text-amber-700 font-bold text-sm mb-3">0{i + 1}</div>
-                <h3 className="font-semibold text-stone-900 mb-2">{step.title}</h3>
-                <p className="text-stone-600 text-sm leading-relaxed">{step.description}</p>
+              <div
+                key={step.title}
+                className="p-6 bg-white border border-stone-200 rounded-lg"
+              >
+                <div className="text-amber-700 font-bold text-sm mb-3">
+                  0{i + 1}
+                </div>
+                <h3 className="font-semibold text-stone-900 mb-2">
+                  {step.title}
+                </h3>
+                <p className="text-stone-600 text-sm leading-relaxed">
+                  {step.description}
+                </p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
+      {/* Projects */}
       <section className="py-20 md:py-28 bg-stone-50 border-y border-stone-200">
         <div className="max-w-4xl mx-auto px-6">
           <SectionHeading
@@ -213,14 +221,28 @@ export default function AboutPage() {
               exists&mdash;I build one.
             </p>
             <p>
-              <a href="https://bartender-trainer.replit.app/" target="_blank" rel="noopener noreferrer" className="text-amber-700 font-medium hover:text-amber-800">Bartender Trainer</a>{" "}
+              <a
+                href="https://bartender-trainer.replit.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-amber-700 font-medium hover:text-amber-800"
+              >
+                Bartender Trainer
+              </a>{" "}
               came from 14 years behind the bar and watching training systems that
               stopped after week one. It&rsquo;s a tool for reinforcing drink
               knowledge and service consistency through active recall&mdash;the
               kind of thing I wished existed when I was training new bartenders.
             </p>
             <p>
-              <a href="https://philosophercouncil.net" target="_blank" rel="noopener noreferrer" className="text-amber-700 font-medium hover:text-amber-800">Philosopher Council</a>{" "}
+              <a
+                href="https://philosophercouncil.net"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-amber-700 font-medium hover:text-amber-800"
+              >
+                Philosopher Council
+              </a>{" "}
               is a different kind of build&mdash;an AI-powered platform for
               structured multi-perspective thinking. Different domain, same
               instinct: take something complex, design a clear system around it,
@@ -234,6 +256,7 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* CTA */}
       <section className="py-20 md:py-28">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <SectionHeading
