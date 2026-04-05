@@ -5,10 +5,8 @@ import { useState } from "react";
 
 /*
   PROFILE PHOTO:
-  Place your headshot at: public/images/thomas-sapienza.jpg
-  Recommended: 600\u00d7800px or similar 3:4 ratio, professional headshot.
-
-  Until the file is added, this component shows the "TS" initials fallback.
+  Current file: public/bartender photo.jpeg
+  To update, replace the file on GitHub and update the src path below.
 */
 
 export default function ProfilePhoto() {
@@ -32,8 +30,8 @@ export default function ProfilePhoto() {
   return (
     <div className="aspect-[3/4] relative rounded-lg overflow-hidden bg-stone-900">
       <Image
-        src="/images/thomas-sapienza.jpg"
-        alt="Thomas Sapienza \u2014 Founder, Sapienza Systems"
+        src="/bartender photo.jpeg"
+        alt="Thomas Sapienza — Founder, Sapienza Systems"
         fill
         className="object-cover"
         sizes="(max-width: 768px) 100vw, 33vw"
