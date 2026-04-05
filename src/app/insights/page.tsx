@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Insights",
   description:
-    "Insights from Sapienza Systems on operations, systems, documentation, workflow, and execution\u2014from hospitality to biotech.",
+    "Insights from Sapienza Systems on operations, systems, documentation, workflow, and execution—from hospitality to biotech.",
 };
 
 export default function InsightsPage() {
@@ -13,6 +13,7 @@ export default function InsightsPage() {
 
   return (
     <>
+      {/* Hero */}
       <section className="bg-stone-900 text-white">
         <div className="max-w-6xl mx-auto px-6 py-20 md:py-28">
           <p className="text-amber-400 text-sm font-semibold uppercase tracking-wider mb-4">
@@ -22,11 +23,13 @@ export default function InsightsPage() {
             Thinking on Operations, Systems, and Execution
           </h1>
           <p className="mt-6 text-lg text-stone-300 max-w-2xl leading-relaxed">
-            Practical writing about what makes teams run well &mdash; and what gets in
+            Practical writing about what makes teams run well — and what gets in
             the way.
           </p>
         </div>
       </section>
+
+      {/* Posts */}
       <section className="py-20 md:py-28">
         <div className="max-w-4xl mx-auto px-6">
           {posts.length === 0 ? (

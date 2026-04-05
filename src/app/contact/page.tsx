@@ -4,7 +4,7 @@ import ContactForm from "@/components/ContactForm";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Contact Sapienza Systems. Tell me what\u2019s not working in your operations and I\u2019ll tell you what I\u2019d fix. No sales pitch\u2014just a straight conversation.",
+    "Contact Sapienza Systems. Tell me what’s not working in your operations and I’ll tell you what I’d fix. No sales pitch—just a straight conversation.",
 };
 
 export default function ContactPage() {
