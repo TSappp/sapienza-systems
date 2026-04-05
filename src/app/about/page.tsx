@@ -11,16 +11,16 @@ export const metadata: Metadata = {
 
 const timeline = [
   {
-    period: "2008\u20132012",
+    period: "2008–2012",
     title: "Every Station in the Building",
     description:
-      "Busboy. Dishwasher. Host. Prep cook. Line cook. Barback. I learned how a restaurant works by doing every job nobody wants to do\u2014and understanding why each one matters when it\u2019s done right.",
+      "Busboy. Dishwasher. Host. Prep cook. Line cook. Barback. I learned how a restaurant works by doing every job nobody wants to do—and understanding why each one matters when it’s done right.",
   },
   {
-    period: "2012\u20132024",
+    period: "2012–2024",
     title: "14 Years Behind the Bar",
     description:
-      "High-volume service, craft cocktail programs, late nights, double shifts, and every kind of operational chaos a bar can produce. This is where I learned what separates a smooth shift from a trainwreck\u2014and it\u2019s almost never the staff. It\u2019s the systems.",
+      "High-volume service, craft cocktail programs, late nights, double shifts, and every kind of operational chaos a bar can produce. This is where I learned what separates a smooth shift from a trainwreck—and it’s almost never the staff. It’s the systems.",
   },
   {
     period: "Parallel Track",
@@ -32,7 +32,7 @@ const timeline = [
     period: "Present",
     title: "Sapienza Systems",
     description:
-      "Now I do the same work through Sapienza Systems\u2014spotting inefficiency, documenting processes, tightening execution\u2014for clients who need it. Restaurants, bars, hospitality groups, labs, and operators who are tired of inconsistent results.",
+      "Now I do the same work through Sapienza Systems—spotting inefficiency, documenting processes, tightening execution—for clients who need it. Restaurants, bars, hospitality groups, labs, and operators who are tired of inconsistent results.",
   },
 ];
 
@@ -40,22 +40,22 @@ const approach = [
   {
     title: "Watch the Real Operation",
     description:
-      "Not the version in the handbook\u2014the version that happens on a Tuesday night when you\u2019re short-staffed. I look for where people improvise, repeat themselves, or work around something broken.",
+      "Not the version in the handbook—the version that happens on a Tuesday night when you’re short-staffed. I look for where people improvise, repeat themselves, or work around something broken.",
   },
   {
     title: "Name the Actual Problem",
     description:
-      "Slow service isn\u2019t a people problem\u2014it\u2019s a bar setup problem. High turnover isn\u2019t a culture problem\u2014it\u2019s a training problem. I find the root cause and call it what it is.",
+      "Slow service isn’t a people problem—it’s a bar setup problem. High turnover isn’t a culture problem—it’s a training problem. I find the root cause and call it what it is.",
   },
   {
     title: "Build What Fixes It",
     description:
-      "A one-page checklist. A shift guide. An onboarding doc. A workflow map. Whatever the operation actually needs\u2014written clearly enough that someone can use it on day one.",
+      "A one-page checklist. A shift guide. An onboarding doc. A workflow map. Whatever the operation actually needs—written clearly enough that someone can use it on day one.",
   },
   {
     title: "Make Sure It Sticks",
     description:
-      "Documentation that sits in a Google Drive folder isn\u2019t a system. I help teams put the work into practice and adjust until it holds.",
+      "Documentation that sits in a Google Drive folder isn’t a system. I help teams put the work into practice and adjust until it holds.",
   },
 ];
 
@@ -99,12 +99,22 @@ export default function AboutPage() {
                   and a short staff.
                 </p>
                 <p>
+                  That experience spanned multiple hospitality
+                  formats&mdash;neighborhood bars, Irish pubs, nightlife,
+                  high-volume restaurants like Stephanie&rsquo;s on Newbury,
+                  private clubs, and hotel bar operations at The Lenox. Each
+                  environment ran differently, but the problems were the
+                  same: workflow that broke under pressure, training that
+                  didn&rsquo;t transfer, and standards that depended on
+                  whoever was working.
+                </p>
+                <p>
                   Alongside hospitality, I built a parallel track in education
-                  and scientific operations\u2014eventually working as a process
-                  development scientist in a cGMP environment. That dual
-                  background is why I approach operations differently: not from
-                  abstraction, but from the level where systems actually succeed
-                  or fail.
+                  and scientific operations&mdash;eventually working as a
+                  process development scientist in a cGMP environment. That
+                  dual background is why I approach operations differently: not
+                  from abstraction, but from the level where systems actually
+                  succeed or fail.
                 </p>
                 <p>
                   Now I do the same thing for clients. I walk into an operation,
@@ -114,7 +124,7 @@ export default function AboutPage() {
                   whether you&rsquo;re in the building or not.
                 </p>
                 <p>
-                  The problems are the same everywhere\u2014restaurants, labs,
+                  The problems are the same everywhere&mdash;restaurants, labs,
                   growing companies. Unclear processes. Tribal knowledge.
                   Inconsistent training. Documentation that doesn&rsquo;t exist
                   or doesn&rsquo;t get used. That&rsquo;s why I started
@@ -148,7 +158,7 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto px-6">
           <SectionHeading
             label="Experience"
-            title="The Long Way Around\u2014And Why It Matters"
+            title="The Long Way Around—And Why It Matters"
             centered={false}
           />
           <div className="space-y-8">
@@ -260,8 +270,8 @@ export default function AboutPage() {
       <section className="py-20 md:py-28">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <SectionHeading
-            title="Let\u2019s Talk About What\u2019s Broken"
-            description="I work with restaurants, hospitality groups, labs, and technical teams. Tell me what\u2019s not working and I\u2019ll tell you what I\u2019d do about it."
+            title="Let’s Talk About What’s Broken"
+            description="I work with restaurants, hospitality groups, labs, and technical teams. Tell me what’s not working and I’ll tell you what I’d do about it."
           />
           <Button href="/contact">Get In Touch</Button>
         </div>

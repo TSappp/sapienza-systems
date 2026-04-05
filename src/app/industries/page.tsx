@@ -12,11 +12,11 @@ const industries = [
   {
     title: "Restaurants & Bars",
     description:
-      "I\u2019ve spent 16 years inside these operations. I know what a bad bar setup costs you in ticket times. I know why your Tuesday closer does it differently than your Saturday closer. I know the difference between a training program and just telling someone to shadow the good bartender for a week. If your operation runs well when the A-team is on but falls apart when they\u2019re not\u2014the problem is systems, and I can fix it.",
+      "I’ve spent 16 years inside these operations. I know what a bad bar setup costs you in ticket times. I know why your Tuesday closer does it differently than your Saturday closer. I know the difference between a training program and just telling someone to shadow the good bartender for a week. If your operation runs well when the A-team is on but falls apart when they’re not—the problem is systems, and I can fix it.",
     problems: [
-      "The quality of a shift depends on who\u2019s working it",
+      "The quality of a shift depends on who’s working it",
       "Opening and closing routines change by the person",
-      "Training means \u201cshadow someone for a few shifts\u201d",
+      "Training means “shadow someone for a few shifts”",
       "FOH and BOH communicate through shouting or guessing",
       "Your best people carry the weight of broken systems",
     ],
@@ -37,10 +37,10 @@ const industries = [
   {
     title: "Hospitality Groups & Multi-Unit Teams",
     description:
-      "When one location runs great and another doesn\u2019t, the difference is almost never the people. It\u2019s that the good location has systems\u2014even if nobody calls them that\u2014and the other one is running on improvisation. I help hospitality groups build the operational infrastructure that makes standards portable: documentation, training, and workflows that work the same everywhere.",
+      "When one location runs great and another doesn’t, the difference is almost never the people. It’s that the good location has systems—even if nobody calls them that—and the other one is running on improvisation. I help hospitality groups build the operational infrastructure that makes standards portable: documentation, training, and workflows that work the same everywhere.",
     problems: [
       "Quality and standards differ between locations",
-      "Training depends on whoever\u2019s doing the training that day",
+      "Training depends on whoever’s doing the training that day",
       "GMs spend their time putting out fires instead of leading",
       "Scaling means the problems get bigger, not better",
       "Institutional knowledge leaves when managers leave",
@@ -62,9 +62,9 @@ const industries = [
   {
     title: "Labs & Technical Teams",
     description:
-      "I worked in process development and scientific operations before consulting. I know what it looks like when documentation is a month behind, when reports come out differently depending on who writes them, and when a team member leaves and takes half the institutional knowledge with them. In technical environments, unclear processes aren\u2019t just inconvenient\u2014they create compliance risk, wasted cycles, and compounding confusion.",
+      "I worked in process development and scientific operations before consulting. I know what it looks like when documentation is a month behind, when reports come out differently depending on who writes them, and when a team member leaves and takes half the institutional knowledge with them. In technical environments, unclear processes aren’t just inconvenient—they create compliance risk, wasted cycles, and compounding confusion.",
     problems: [
-      "Processes exist but aren\u2019t documented well enough to hand off",
+      "Processes exist but aren’t documented well enough to hand off",
       "Reports vary in format, depth, and quality by author",
       "Meeting context disappears between sessions",
       "Onboarding a new scientist or technician takes months",
@@ -78,22 +78,22 @@ const industries = [
       "Onboarding documentation for technical and lab roles",
     ],
     outcomes: [
-      "Documentation that\u2019s current, clear, and actually referenced",
+      "Documentation that’s current, clear, and actually referenced",
       "New hires get oriented without draining senior staff for weeks",
       "Reports are consistent regardless of who produces them",
-      "Process ownership is visible\u2014not assumed",
+      "Process ownership is visible—not assumed",
     ],
   },
   {
     title: "Founders & Operators",
     description:
-      "You built the company, and now you\u2019re the bottleneck. Every question routes through you because nothing is written down. Onboarding is you explaining things over Zoom for the third time. Quality varies because the standard lives in your head. I build the documentation and systems that let your team operate without you in every loop\u2014so you can focus on growing the business instead of explaining how it works.",
+      "You built the company, and now you’re the bottleneck. Every question routes through you because nothing is written down. Onboarding is you explaining things over Zoom for the third time. Quality varies because the standard lives in your head. I build the documentation and systems that let your team operate without you in every loop—so you can focus on growing the business instead of explaining how it works.",
     problems: [
-      "Nothing is documented\u2014everything runs on your availability",
+      "Nothing is documented—everything runs on your availability",
       "Hiring means re-explaining the same things from scratch",
-      "Quality drops when you\u2019re not directly involved",
-      "The team can\u2019t scale because the systems can\u2019t scale",
-      "You\u2019re spending operator time on manager problems",
+      "Quality drops when you’re not directly involved",
+      "The team can’t scale because the systems can’t scale",
+      "You’re spending operator time on manager problems",
     ],
     improvements: [
       "Core process documentation and operational SOPs",
@@ -126,7 +126,7 @@ export default function IndustriesPage() {
           <p className="mt-6 text-lg text-stone-300 max-w-2xl leading-relaxed">
             A restaurant kitchen and a biotech lab have more in common than
             people think. Both break when processes are unclear, training is
-            inconsistent, and documentation doesn\u2019t exist. I fix that in
+            inconsistent, and documentation doesn’t exist. I fix that in
             both.
           </p>
         </div>
@@ -201,7 +201,7 @@ export default function IndustriesPage() {
         <div className="max-w-3xl mx-auto px-6 text-center">
           <SectionHeading
             title="See Your Team Here?"
-            description="Tell me what\u2019s not working. I\u2019ll tell you what I\u2019d fix and what it would look like when it\u2019s done."
+            description="Tell me what’s not working. I’ll tell you what I’d fix and what it would look like when it’s done."
           />
           <Button href="/contact">Start a Conversation</Button>
         </div>
