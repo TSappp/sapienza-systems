@@ -3,19 +3,19 @@
 import { useState, FormEvent } from "react";
 
 /*
-  \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510
-  \u2502  FORMSPREE SETUP \u2014 you must do this before the form works\u2502
-  \u2502                                                          \u2502
-  \u2502  1. Go to https://formspree.io and create a free account \u2502
-  \u2502  2. Create a new form (it will give you an ID)           \u2502
-  \u2502  3. Replace "YOUR_FORM_ID" below with your real form ID  \u2502
-  \u2502     Example: "xyzabc12"                                  \u2502
-  \u2502                                                          \u2502
-  \u2502  Until you do this, submissions will fail and show the   \u2502
-  \u2502  error state with a fallback to your email address.      \u2502
-  \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518
+  ┌──────────────────────────────────────────────────────────┐
+  │  FORMSPREE SETUP — you must do this before the form works│
+  │                                                          │
+  │  1. Go to https://formspree.io and create a free account │
+  │  2. Create a new form (it will give you an ID)           │
+  │  3. Replace "YOUR_FORM_ID" below with your real form ID  │
+  │     Example: "xyzabc12"                                  │
+  │                                                          │
+  │  Until you do this, submissions will fail and show the   │
+  │  error state with a fallback to your email address.      │
+  └──────────────────────────────────────────────────────────┘
 */
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/YOUR_FORM_ID";
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/xpqooope";
 
 export default function ContactForm() {
   const [status, setStatus] = useState<
