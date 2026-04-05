@@ -13,7 +13,7 @@ const services = [
     id: "hospitality-operations",
     title: "Hospitality Operations Consulting",
     description:
-      "Your opening routine changes depending on who\u2019s working. Your best bartender\u2019s standards don\u2019t transfer to the rest of the team. Shift transitions are sloppy. FOH and BOH talk past each other. The operation works\u2014but only when the right people are on. I fix that. I audit how your operation actually runs, identify where it breaks down, and build the systems that make execution consistent regardless of who\u2019s on the floor.",
+      "Your opening routine changes depending on who's working. Your best bartender's standards don't transfer to the rest of the team. Shift transitions are sloppy. FOH and BOH talk past each other. The operation works—but only when the right people are on. I fix that. I audit how your operation actually runs, identify where it breaks down, and build the systems that make execution consistent regardless of who's on the floor.",
     idealClient:
       "Restaurant owners, bar operators, GMs, and hospitality groups whose operations depend too much on specific people instead of repeatable systems.",
     deliverables: [
@@ -25,21 +25,21 @@ const services = [
       "Sidework, prep, and daily task standardization",
     ],
     credibilityNote:
-      "I also built Bartender Trainer\u2014a drink knowledge and recall tool born from 14 years behind the bar\u2014because I think training should be built into the workflow, not something that stops after week one.",
+      "I also built Bartender Trainer—a drink knowledge and recall tool born from 14 years behind the bar—because I think training should be built into the workflow, not something that stops after week one.",
     outcomes: [
-      "Shifts run the same way regardless of who\u2019s working",
+      "Shifts run the same way regardless of who's working",
       "Less time spent fixing preventable problems",
       "Faster, more consistent service during peak hours",
-      "Your operation holds up when you\u2019re not in the building",
+      "Your operation holds up when you're not in the building",
     ],
   },
   {
     id: "sops-playbooks",
     title: "SOPs, Playbooks & Training Systems",
     description:
-      "Your team knows how to do the job\u2014but that knowledge lives in their heads. When they leave, call out, or have an off night, the standard drops. New hires take weeks to get up to speed because there\u2019s nothing written down. I extract the knowledge your team carries, organize it, and turn it into documents that anyone can pick up and follow. Not binders that collect dust\u2014scannable, practical tools that work during a real shift.",
+      "Your team knows how to do the job—but that knowledge lives in their heads. When they leave, call out, or have an off night, the standard drops. New hires take weeks to get up to speed because there's nothing written down. I extract the knowledge your team carries, organize it, and turn it into documents that anyone can pick up and follow. Not binders that collect dust—scannable, practical tools that work during a real shift.",
     idealClient:
-      "Teams where onboarding is slow, training varies by trainer, institutional knowledge walks out the door when people leave, or there\u2019s no single source of truth for how things should be done.",
+      "Teams where onboarding is slow, training varies by trainer, institutional knowledge walks out the door when people leave, or there's no single source of truth for how things should be done.",
     deliverables: [
       "Role-specific SOPs (e.g., bartender opening, server sidework, closing manager duties)",
       "New-hire onboarding checklist with day-by-day milestones",
@@ -50,7 +50,7 @@ const services = [
     ],
     outcomes: [
       "New hires contribute in days instead of weeks",
-      "Training quality stays consistent even when your best people aren\u2019t training",
+      "Training quality stays consistent even when your best people aren't training",
       "Knowledge is preserved when employees leave",
       "Your team has one clear answer for \u201chow do we do this?\u201d",
     ],
@@ -59,7 +59,7 @@ const services = [
     id: "technical-documentation",
     title: "Technical Documentation & Workflow Support",
     description:
-      "Your processes work\u2014but they\u2019re not documented well enough for someone new to follow. Reports come out inconsistent depending on who writes them. Context from last week\u2019s meeting evaporates by Monday. I bring the same systems-thinking I use in hospitality to labs, biotech teams, and technical organizations. The deliverables look different. The discipline is the same: clear documentation, repeatable processes, and workflows that don\u2019t depend on someone\u2019s memory.",
+      "Your processes work—but they're not documented well enough for someone new to follow. Reports come out inconsistent depending on who writes them. Context from last week's meeting evaporates by Monday. I bring the same systems-thinking I use in hospitality to labs, biotech teams, and technical organizations. The deliverables look different. The discipline is the same: clear documentation, repeatable processes, and workflows that don't depend on someone's memory.",
     idealClient:
       "Biotech teams, labs, and technical organizations where documentation quality directly affects compliance, onboarding, or operational reliability.",
     deliverables: [
@@ -73,7 +73,7 @@ const services = [
     outcomes: [
       "New team members get oriented without shadowing someone for a month",
       "Reports are consistent in format and quality, every time",
-      "Processes are visible, documented, and owned\u2014not assumed",
+      "Processes are visible, documented, and owned—not assumed",
       "Meetings produce clear next steps instead of vague follow-ups",
     ],
   },
@@ -81,9 +81,9 @@ const services = [
     id: "ai-workflow",
     title: "AI Workflow Setup",
     description:
-      "You write the same kinds of reports, summaries, SOPs, and emails every week. AI tools like ChatGPT, Copilot, and Warp can cut that work in half\u2014but only if they\u2019re set up for your specific tasks, not generic use. I build custom AI workflows tailored to the work you already do: prompt systems, templates, and repeatable pipelines that turn rough notes into polished deliverables.",
+      "You write the same kinds of reports, summaries, SOPs, and emails every week. AI tools like ChatGPT, Copilot, and Warp can cut that work in half—but only if they're set up for your specific tasks, not generic use. I build custom AI workflows tailored to the work you already do: prompt systems, templates, and repeatable pipelines that turn rough notes into polished deliverables.",
     idealClient:
-      "Managers, operators, and professionals who produce recurring written work\u2014reports, documentation, communications\u2014and want to do it faster without losing quality.",
+      "Managers, operators, and professionals who produce recurring written work—reports, documentation, communications—and want to do it faster without losing quality.",
     deliverables: [
       "Custom prompt library for your recurring tasks (SOPs, reports, emails)",
       "Note-to-summary and meeting-to-action-item workflows",
@@ -93,12 +93,12 @@ const services = [
       "Training session on daily AI use for your specific work",
     ],
     credibilityNote:
-      "I don\u2019t just advise on AI tools\u2014I build with them. Philosopher Council is a full AI-powered platform I designed and shipped, using the same structured-thinking approach I bring to client workflows.",
+      "I don't just advise on AI tools—I build with them. Philosopher Council is a full AI-powered platform I designed and shipped, using the same structured-thinking approach I bring to client workflows.",
     outcomes: [
       "Written deliverables take half the time to produce",
       "Documentation quality improves because the starting point is better",
       "Raw notes and meeting context turn into usable documents automatically",
-      "You build compounding workflows\u2014each week is faster than the last",
+      "You build compounding workflows—each week is faster than the last",
     ],
   },
 ];
@@ -113,7 +113,7 @@ export default function ServicesPage() {
             Services
           </p>
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight leading-tight max-w-3xl">
-            Four Ways I Fix What\u2019s Slowing Your Team Down
+            Four Ways I Fix What's Slowing Your Team Down
           </h1>
           <p className="mt-6 text-lg text-stone-300 max-w-2xl leading-relaxed">
             Every engagement is focused on a specific operational problem.
@@ -208,7 +208,7 @@ export default function ServicesPage() {
         <div className="max-w-3xl mx-auto px-6 text-center">
           <SectionHeading
             title="Not Sure Where to Start?"
-            description="You don\u2019t need to know the service name. Tell me what\u2019s broken and I\u2019ll tell you what I\u2019d fix first."
+            description="You don't need to know the service name. Tell me what's broken and I'll tell you what I'd fix first."
           />
           <Button href="/contact">Let&rsquo;s Talk</Button>
         </div>

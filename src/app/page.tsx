@@ -7,13 +7,13 @@ const services = [
   {
     title: "Hospitality Operations Consulting",
     description:
-      "Your bar setup shouldn\u2019t change depending on who\u2019s working. I audit service flow, fix coordination gaps, and build systems that keep shifts tight even when you\u2019re not there.",
+      "Your bar setup shouldn't change depending on who's working. I audit service flow, fix coordination gaps, and build systems that keep shifts tight even when you're not there.",
     href: "/services#hospitality-operations",
   },
   {
     title: "SOPs, Playbooks & Training Systems",
     description:
-      "If your best employee quit tomorrow, could someone else do their job by Friday? I turn the knowledge stuck in people\u2019s heads into documents your whole team can follow.",
+      "If your best employee quit tomorrow, could someone else do their job by Friday? I turn the knowledge stuck in people's heads into documents your whole team can follow.",
     href: "/services#sops-playbooks",
   },
   {
@@ -25,7 +25,7 @@ const services = [
   {
     title: "AI Workflow Setup",
     description:
-      "You\u2019re already writing reports, SOPs, and emails every week. I set up practical AI workflows so those tasks take less time and come out cleaner, faster, and more usable.",
+      "You're already writing reports, SOPs, and emails every week. I set up practical AI workflows so those tasks take less time and come out cleaner, faster, and more usable.",
     href: "/services#ai-workflow",
   },
 ];
@@ -34,7 +34,7 @@ const audiences = [
   {
     label: "Restaurant & Bar Owners",
     description:
-      "Shifts that run clean without you babysitting. Opening checklists that don\u2019t depend on who\u2019s on the schedule.",
+      "Shifts that run clean without you babysitting. Opening checklists that don't depend on who's on the schedule.",
   },
   {
     label: "GMs & Hospitality Groups",
@@ -44,7 +44,7 @@ const audiences = [
   {
     label: "Labs & Technical Teams",
     description:
-      "Documentation that\u2019s current and useful. Processes that survive when someone leaves or a new hire starts.",
+      "Documentation that's current and useful. Processes that survive when someone leaves or a new hire starts.",
   },
   {
     label: "Founders & Operators",
@@ -57,7 +57,7 @@ const differentiators = [
   {
     title: "16 Years in Restaurants",
     description:
-      "Busboy, dishwasher, prep cook, line cook, barback, bartender. I\u2019ve held every position in a restaurant and know exactly where operations fall apart.",
+      "Busboy, dishwasher, prep cook, line cook, barback, bartender. I've held every position in a restaurant and know exactly where operations fall apart.",
   },
   {
     title: "Two Industries, One Skill Set",
@@ -72,7 +72,7 @@ const differentiators = [
   {
     title: "I See the Problem Fast",
     description:
-      "Most operational friction hides in plain sight. I find it quickly because I\u2019ve lived inside the same systems your team is struggling with.",
+      "Most operational friction hides in plain sight. I find it quickly because I've lived inside the same systems your team is struggling with.",
   },
 ];
 
@@ -127,7 +127,7 @@ export default function HomePage() {
           <SectionHeading
             label="What I Do"
             title="Fix the Workflow. Document the Standards. Train the Team."
-            description="Every team has friction they\u2019ve learned to live with. I identify it, fix it, and build systems that keep it from coming back."
+            description="Every team has friction they've learned to live with. I identify it, fix it, and build systems that keep it from coming back."
           />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {services.map((service) => (
@@ -178,11 +178,11 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-6">
           <SectionHeading
             label="Why Work With Me"
-            title="I\u2019ve Done the Work You\u2019re Trying to Fix"
+            title="I've Done the Work You're Trying to Fix"
             description="Most consultants study operations from a distance. I spent 16 years inside them."
           />
           <p className="text-stone-600 text-sm leading-relaxed -mt-6 mb-10 max-w-3xl mx-auto text-center">
-            My perspective was built from the ground up\u2014from busboy to
+            My perspective was built from the ground up—from busboy to
             bartender, from student to teacher, and from manufacturing tech to
             process development scientist. I build systems that work where they
             matter most: in the day-to-day execution.
@@ -230,7 +230,7 @@ export default function HomePage() {
                 A training tool built to improve drink knowledge, recipe recall,
                 and operational consistency for bartenders and bar teams. Born
                 from 14 years behind the bar and the belief that training
-                shouldn\u2019t stop after someone\u2019s first week.
+                shouldn't stop after someone's first week.
               </p>
               <ul className="space-y-2 mb-6">
                 <li className="flex items-start gap-2 text-sm text-stone-600">
@@ -274,7 +274,7 @@ export default function HomePage() {
               <p className="text-stone-600 text-sm leading-relaxed mb-4">
                 An AI-powered platform that lets users convene multiple
                 philosophers in parallel, compare viewpoints, and explore
-                debate and consensus. A different kind of build\u2014but the
+                debate and consensus. A different kind of build—but the
                 same discipline: clear systems, structured thinking, and
                 useful output from complex inputs.
               </p>
@@ -354,7 +354,7 @@ export default function HomePage() {
           <SectionHeading
             label="Get Started"
             title="Your Team Deserves Better Systems"
-            description="Tell me what\u2019s not working. I\u2019ll tell you what I\u2019d change and why."
+            description="Tell me what's not working. I'll tell you what I'd change and why."
           />
           <div className="flex flex-wrap justify-center gap-4">
             <Button href="/contact">Work With Me</Button>
