@@ -6,7 +6,7 @@ import ProfilePhoto from "@/components/ProfilePhoto";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Sapienza Systems was founded by Thomas Sapienza. 16 years in restaurants, process development background, and a focus on building systems that actually work.",
+    "Thomas Sapienza — restaurant operations consultant in Boston. 16 years in hospitality, 14 behind the bar. I build practical systems that make restaurants run the same way whether you're in the building or not.",
 };
 
 const timeline = [
@@ -14,48 +14,48 @@ const timeline = [
     period: "2008–2012",
     title: "Every Station in the Building",
     description:
-      "Busboy. Dishwasher. Host. Prep cook. Line cook. Barback. I learned how a restaurant works by doing every job nobody wants to do—and understanding why each one matters when it’s done right.",
+      "Busboy. Dishwasher. Host. Prep cook. Line cook. Barback. I learned how a restaurant works by doing every job nobody wants to do — and understanding why each one matters when it's done right.",
   },
   {
     period: "2012–2024",
     title: "14 Years Behind the Bar",
     description:
-      "High-volume service, craft cocktail programs, late nights, double shifts, and every kind of operational chaos a bar can produce. This is where I learned what separates a smooth shift from a trainwreck—and it’s almost never the staff. It’s the systems.",
+      "Neighborhood bars, Irish pubs, nightlife, high-volume restaurants like Stephanie's on Newbury, private clubs, and hotel bar operations at The Lenox. Every format runs differently, but the problems are the same: workflow that breaks under pressure, training that doesn't transfer, standards that depend on whoever's working.",
   },
   {
     period: "Parallel Track",
     title: "Process Development & Scientific Operations",
     description:
-      "Worked in process development and scientific operations, building documentation systems, writing technical reports, mapping workflows, and designing processes that had to be precise, repeatable, and auditable. Different industry, same core discipline.",
+      "Worked in process development in a cGMP environment — building documentation systems, writing technical reports, mapping workflows, and designing processes that had to be precise, repeatable, and auditable. This is where I learned to write the kind of clear, durable systems I now build for restaurants.",
   },
   {
     period: "Present",
     title: "Sapienza Systems",
     description:
-      "Now I do the same work through Sapienza Systems—spotting inefficiency, documenting processes, tightening execution—for clients who need it. Restaurants, bars, hospitality groups, labs, and operators who are tired of inconsistent results.",
+      "Now I bring both backgrounds together — restaurant operations instinct plus documentation rigor — to help Boston restaurants and bars build the systems that make standards portable and execution consistent.",
   },
 ];
 
 const approach = [
   {
-    title: "Watch the Real Operation",
+    title: "Watch a Real Shift",
     description:
-      "Not the version in the handbook—the version that happens on a Tuesday night when you’re short-staffed. I look for where people improvise, repeat themselves, or work around something broken.",
+      "Not the version in the handbook — the version that happens on a Tuesday night when you're short-staffed. I look for where people improvise, repeat themselves, or work around something broken.",
   },
   {
     title: "Name the Actual Problem",
     description:
-      "Slow service isn’t a people problem—it’s a bar setup problem. High turnover isn’t a culture problem—it’s a training problem. I find the root cause and call it what it is.",
+      "Slow service isn't a people problem — it's a bar setup problem. High turnover isn't a culture problem — it's a training problem. I find the root cause and call it what it is.",
   },
   {
-    title: "Build What Fixes It",
+    title: "Build the Fix",
     description:
-      "A one-page checklist. A shift guide. An onboarding doc. A workflow map. Whatever the operation actually needs—written clearly enough that someone can use it on day one.",
+      "A one-page checklist. A shift guide. An onboarding doc. A manager handoff log. Whatever the operation actually needs — written clearly enough that someone can use it on day one.",
   },
   {
     title: "Make Sure It Sticks",
     description:
-      "Documentation that sits in a Google Drive folder isn’t a system. I help teams put the work into practice and adjust until it holds.",
+      "Documentation that sits in a Google Drive folder isn't a system. I help teams put the tools into practice and adjust until they hold under real conditions.",
   },
 ];
 
@@ -69,7 +69,7 @@ export default function AboutPage() {
             About
           </p>
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight leading-tight max-w-3xl">
-            The Story Behind Sapienza Systems
+            16 Years Inside Restaurants. Now I Fix the Systems.
           </h1>
         </div>
       </section>
@@ -87,64 +87,56 @@ export default function AboutPage() {
                 Thomas Sapienza
               </h2>
               <p className="text-sm text-stone-500 mb-6">
-                Founder, Sapienza Systems
+                Restaurant Operations Systems Consultant &middot; Boston
               </p>
               <div className="space-y-4 text-stone-600 leading-relaxed">
                 <p>
                   I spent 16 years in restaurants and hospitality. Started as a
                   busboy and dishwasher. Worked every station: host, prep cook,
                   line cook, barback. Bartended for 14 years across high-volume
-                  and craft-focused bars. I didn&rsquo;t study operations from a
-                  textbook. I learned them on a Friday night with a full rail
+                  and craft-focused bars. I didn&rsquo;t study operations from
+                  a textbook. I learned them on a Friday night with a full rail
                   and a short staff.
                 </p>
                 <p>
-                  That experience spanned multiple hospitality
-                  formats&mdash;neighborhood bars, Irish pubs, nightlife,
-                  high-volume restaurants like Stephanie&rsquo;s on Newbury,
-                  private clubs, and hotel bar operations at The Lenox. Each
-                  environment ran differently, but the problems were the
-                  same: workflow that broke under pressure, training that
-                  didn&rsquo;t transfer, and standards that depended on
-                  whoever was working.
+                  That experience spanned multiple hospitality formats &mdash;
+                  neighborhood bars, Irish pubs, nightlife, high-volume
+                  restaurants like Stephanie&rsquo;s on Newbury, private clubs,
+                  and hotel bar operations at The Lenox. Each environment ran
+                  differently, but the problems were the same: workflow that
+                  broke under pressure, training that didn&rsquo;t transfer,
+                  and standards that depended on whoever was working.
                 </p>
                 <p>
-                  Alongside hospitality, I built a parallel track in education
-                  and scientific operations&mdash;eventually working as a
-                  process development scientist in a cGMP environment. That
-                  dual background is why I approach operations differently: not
-                  from abstraction, but from the level where systems actually
-                  succeed or fail.
+                  Alongside hospitality, I built a parallel track in scientific
+                  operations &mdash; working as a process development scientist
+                  in a cGMP environment. That&rsquo;s where I learned to write
+                  the kind of precise, repeatable, durable documentation that
+                  most restaurants never get. I bring that rigor to every
+                  checklist, SOP, and training system I build.
                 </p>
                 <p>
-                  Now I do the same thing for clients. I walk into an operation,
-                  spot the friction, and build the systems that eliminate it:
-                  SOPs, training documents, shift guides, workflow maps,
-                  checklists. The stuff that makes a team run the same way
-                  whether you&rsquo;re in the building or not.
+                  Now I do this full-time for restaurant and bar operators. I
+                  come into the operation, spot the friction, and leave behind
+                  the systems that fix it: checklists, training roadmaps, shift
+                  guides, manager handoff logs, SOPs. The practical tools that
+                  make a restaurant run the same way whether you&rsquo;re in
+                  the building or not.
                 </p>
-                <p>
-                  The problems are the same everywhere&mdash;restaurants, labs,
-                  growing companies. Unclear processes. Tribal knowledge.
-                  Inconsistent training. Documentation that doesn&rsquo;t exist
-                  or doesn&rsquo;t get used. That&rsquo;s why I started
-                  Sapienza Systems: to do this work full-time, for the teams
-                  that need it most.
+                <p className="text-stone-900 font-medium">
+                  I don&rsquo;t build bloated consultant deliverables. I build
+                  one-page tools people can use during a real shift.
                 </p>
               </div>
 
-              {/*
-                PDF DOWNLOAD: When ready, place your PDF at public/sapienza-systems-overview.pdf
-                and uncomment the download block below.
-              */}
               <div className="mt-8 p-4 bg-stone-50 border border-stone-200 rounded-lg">
                 <p className="text-sm text-stone-500">
-                  Want to learn more about working together?{" "}
+                  Want to talk about your restaurant?{" "}
                   <a
                     href="/contact"
                     className="text-amber-700 font-medium hover:text-amber-800"
                   >
-                    Start a conversation
+                    Start the conversation
                   </a>
                 </p>
               </div>
@@ -158,15 +150,12 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto px-6">
           <SectionHeading
             label="Experience"
-            title="The Long Way Around—And Why It Matters"
+            title="The Long Way Around — And Why It Matters"
             centered={false}
           />
           <div className="space-y-8">
             {timeline.map((item, i) => (
-              <div
-                key={i}
-                className="flex gap-6 relative"
-              >
+              <div key={i} className="flex gap-6 relative">
                 <div className="flex-shrink-0 w-24 text-right">
                   <span className="text-sm font-semibold text-amber-700">
                     {item.period}
@@ -216,7 +205,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Projects */}
+      {/* Bartender Trainer */}
       <section className="py-20 md:py-28 bg-stone-50 border-y border-stone-200">
         <div className="max-w-4xl mx-auto px-6">
           <SectionHeading
@@ -226,11 +215,6 @@ export default function AboutPage() {
           />
           <div className="space-y-4 text-stone-600 leading-relaxed">
             <p>
-              Consulting isn&rsquo;t the only way I work. When I see a gap in how
-              people train, learn, or think through problems&mdash;and no good tool
-              exists&mdash;I build one.
-            </p>
-            <p>
               <a
                 href="https://bartender-trainer.replit.app/"
                 target="_blank"
@@ -239,28 +223,15 @@ export default function AboutPage() {
               >
                 Bartender Trainer
               </a>{" "}
-              came from 14 years behind the bar and watching training systems that
-              stopped after week one. It&rsquo;s a tool for reinforcing drink
-              knowledge and service consistency through active recall&mdash;the
-              kind of thing I wished existed when I was training new bartenders.
+              came from 14 years behind the bar and watching training systems
+              that stopped after week one. It&rsquo;s a tool for reinforcing
+              drink knowledge and service consistency through active recall
+              &mdash; the kind of thing I wished existed when I was training
+              new bartenders.
             </p>
             <p>
-              <a
-                href="https://philosophercouncil.net"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-amber-700 font-medium hover:text-amber-800"
-              >
-                Philosopher Council
-              </a>{" "}
-              is a different kind of build&mdash;an AI-powered platform for
-              structured multi-perspective thinking. Different domain, same
-              instinct: take something complex, design a clear system around it,
-              and make the output useful.
-            </p>
-            <p>
-              Both projects reflect how I think about work: find the friction,
-              build something practical, ship it.
+              It reflects how I think about work: find the friction, build
+              something practical, ship it.
             </p>
           </div>
         </div>
@@ -270,10 +241,10 @@ export default function AboutPage() {
       <section className="py-20 md:py-28">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <SectionHeading
-            title="Let’s Talk About What’s Broken"
-            description="I work with restaurants, hospitality groups, labs, and technical teams. Tell me what’s not working and I’ll tell you what I’d do about it."
+            title="Let's Talk About Your Operation"
+            description="I work with restaurants, bars, and hospitality groups in Boston. Tell me what's not working and I'll tell you what I'd do about it."
           />
-          <Button href="/contact">Get In Touch</Button>
+          <Button href="/contact">Start the Conversation</Button>
         </div>
       </section>
     </>
