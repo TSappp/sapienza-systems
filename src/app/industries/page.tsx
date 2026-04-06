@@ -3,194 +3,117 @@ import SectionHeading from "@/components/SectionHeading";
 import Button from "@/components/Button";
 
 export const metadata: Metadata = {
-  title: "Industries",
+  title: "What I Fix",
   description:
-    "Sapienza Systems provides operations consulting for restaurants, bars, hospitality groups, labs, biotech teams, and growing companies.",
+    "Restaurant operations problems I fix: shift consistency, training, handoffs, bar standards, SOPs, and documentation that people actually use. Boston restaurant systems consultant.",
 };
 
-const industries = [
+const categories = [
   {
-    title: "Restaurants & Bars",
-    description:
-      "I’ve spent 16 years inside these operations. I know what a bad bar setup costs you in ticket times. I know why your Tuesday closer does it differently than your Saturday closer. I know the difference between a training program and just telling someone to shadow the good bartender for a week. If your operation runs well when the A-team is on but falls apart when they’re not—the problem is systems, and I can fix it.",
-    problems: [
-      "The quality of a shift depends on who’s working it",
-      "Opening and closing routines change by the person",
-      "Training means “shadow someone for a few shifts”",
-      "FOH and BOH communicate through shouting or guessing",
-      "Your best people carry the weight of broken systems",
-    ],
-    improvements: [
-      "Service flow audit with specific, written recommendations",
-      "Bar station redesign and workflow tightening",
-      "Standardized open/close/transition checklists",
-      "Training documents built from how the job is actually done",
-      "FOH/BOH handoff and communication protocols",
-    ],
-    outcomes: [
-      "Consistent execution across every shift",
-      "New hires productive in days, not weeks",
-      "Your operation survives without you in the building",
-      "Less chaos, better service, lower stress",
+    title: "Shift Consistency",
+    problem: "Your standards shouldn't disappear when the strongest person on the schedule is off.",
+    fixes: [
+      "Opening and closing checklists that hold every shift",
+      "Station setup standards that don't vary by person",
+      "Transition routines between day and night crews",
+      "Sidework systems with clear ownership",
     ],
   },
   {
-    title: "Hospitality Groups & Multi-Unit Teams",
-    description:
-      "When one location runs great and another doesn’t, the difference is almost never the people. It’s that the good location has systems—even if nobody calls them that—and the other one is running on improvisation. I help hospitality groups build the operational infrastructure that makes standards portable: documentation, training, and workflows that work the same everywhere.",
-    problems: [
-      "Quality and standards differ between locations",
-      "Training depends on whoever’s doing the training that day",
-      "GMs spend their time putting out fires instead of leading",
-      "Scaling means the problems get bigger, not better",
-      "Institutional knowledge leaves when managers leave",
-    ],
-    improvements: [
-      "Scalable SOPs and role-specific playbooks",
-      "Structured onboarding programs with milestone checkpoints",
-      "Service standards documentation for each position",
-      "Operational audits that surface the real problems",
-      "Documentation systems that grow with the organization",
-    ],
-    outcomes: [
-      "Same standard at every location, every shift",
-      "GMs lead instead of troubleshoot",
-      "New units open faster because the playbook already exists",
-      "Knowledge stays in the system when people move on",
+    title: "Training & Onboarding",
+    problem: "New hires shouldn't need a week of shadowing just to become functional.",
+    fixes: [
+      "Structured onboarding roadmaps by role",
+      "Training sign-off checkpoints",
+      "Service standards documentation new hires can actually reference",
+      "Quick-reference guides for each position",
     ],
   },
   {
-    title: "Labs & Technical Teams",
-    description:
-      "I worked in process development and scientific operations before consulting. I know what it looks like when documentation is a month behind, when reports come out differently depending on who writes them, and when a team member leaves and takes half the institutional knowledge with them. In technical environments, unclear processes aren’t just inconvenient—they create compliance risk, wasted cycles, and compounding confusion.",
-    problems: [
-      "Processes exist but aren’t documented well enough to hand off",
-      "Reports vary in format, depth, and quality by author",
-      "Meeting context disappears between sessions",
-      "Onboarding a new scientist or technician takes months",
-      "Workflow gaps hide until something goes wrong",
-    ],
-    improvements: [
-      "Process documentation and workflow mapping",
-      "Report templates that enforce consistency",
-      "Meeting-to-action-item systems that capture decisions",
-      "Technical writing cleanup and standardization",
-      "Onboarding documentation for technical and lab roles",
-    ],
-    outcomes: [
-      "Documentation that’s current, clear, and actually referenced",
-      "New hires get oriented without draining senior staff for weeks",
-      "Reports are consistent regardless of who produces them",
-      "Process ownership is visible—not assumed",
+    title: "Handoffs & Manager Communication",
+    problem: "Managers shouldn't have to re-explain the same expectations every shift.",
+    fixes: [
+      "Manager shift handoff logs",
+      "Pre-shift templates with structured talking points",
+      "Shift recap workflows that capture what happened",
+      "Issue tracking that doesn't rely on group texts",
     ],
   },
   {
-    title: "Founders & Operators",
-    description:
-      "You built the company, and now you’re the bottleneck. Every question routes through you because nothing is written down. Onboarding is you explaining things over Zoom for the third time. Quality varies because the standard lives in your head. I build the documentation and systems that let your team operate without you in every loop—so you can focus on growing the business instead of explaining how it works.",
-    problems: [
-      "Nothing is documented—everything runs on your availability",
-      "Hiring means re-explaining the same things from scratch",
-      "Quality drops when you’re not directly involved",
-      "The team can’t scale because the systems can’t scale",
-      "You’re spending operator time on manager problems",
+    title: "Sidework & Opening / Closing Systems",
+    problem: "The quality of a close shouldn't depend on who drew the short straw.",
+    fixes: [
+      "Itemized daily task matrices",
+      "Role-assigned closing routines",
+      "Opening checklists that include verification steps",
+      "Weekly deep-clean and maintenance schedules",
     ],
-    improvements: [
-      "Core process documentation and operational SOPs",
-      "Onboarding system design with clear milestones",
-      "Workflow mapping and delegation frameworks",
-      "AI workflow setup for writing, reporting, and documentation",
-      "Operational clarity that frees you to focus on growth",
+  },
+  {
+    title: "Bar Standards & Station Flow",
+    problem: "Your best bartender's setup shouldn't be a mystery to the rest of the team.",
+    fixes: [
+      "Bar station layout standards",
+      "Par and spec organization",
+      "Cocktail consistency systems",
+      "Bartender training modules",
+      "Speed and efficiency workflow audits",
     ],
-    outcomes: [
-      "Your team answers their own questions because the answers are documented",
-      "New hires contribute without weeks of hand-holding",
-      "Quality stays consistent as headcount grows",
-      "You spend your time on strategy, not explaining how things work",
+  },
+  {
+    title: "Documentation People Actually Use",
+    problem: "A 40-page operations manual nobody reads is worse than having nothing at all.",
+    fixes: [
+      "One-page SOPs written for mid-shift reference",
+      "Scannable checklists, not paragraph-heavy manuals",
+      "Role-specific guides that live where the work happens",
+      "Systems designed for a phone screen, not a binder",
     ],
   },
 ];
 
-export default function IndustriesPage() {
+export default function WhatIFixPage() {
   return (
     <>
       {/* Hero */}
       <section className="bg-stone-900 text-white">
         <div className="max-w-6xl mx-auto px-6 py-20 md:py-28">
           <p className="text-amber-400 text-sm font-semibold uppercase tracking-wider mb-4">
-            Industries
+            What I Fix
           </p>
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight leading-tight max-w-3xl">
-            Different Floor. Same Discipline.
+            What I Fix in Restaurant Operations
           </h1>
           <p className="mt-6 text-lg text-stone-300 max-w-2xl leading-relaxed">
-            A restaurant kitchen and a biotech lab have more in common than
-            people think. Both break when processes are unclear, training is
-            inconsistent, and documentation doesn’t exist. I fix that in
-            both.
+            Most restaurant problems aren&rsquo;t people problems. They&rsquo;re
+            systems problems that hide in plain sight because the team has
+            learned to work around them. I find them and build the fix.
           </p>
         </div>
       </section>
 
-      {/* Industries */}
+      {/* Categories */}
       <section className="py-20 md:py-28">
-        <div className="max-w-4xl mx-auto px-6 space-y-24">
-          {industries.map((industry) => (
-            <div key={industry.title}>
+        <div className="max-w-4xl mx-auto px-6 space-y-16">
+          {categories.map((category) => (
+            <div key={category.title}>
               <h2 className="text-2xl md:text-3xl font-bold text-stone-900 tracking-tight">
-                {industry.title}
+                {category.title}
               </h2>
-              <p className="mt-4 text-stone-600 leading-relaxed">
-                {industry.description}
+              <p className="mt-3 text-stone-600 leading-relaxed italic">
+                &ldquo;{category.problem}&rdquo;
               </p>
-
-              <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="p-5 bg-stone-50 border border-stone-200 rounded-lg">
-                  <h3 className="text-sm font-semibold text-stone-900 uppercase tracking-wider mb-3">
-                    Common Problems
-                  </h3>
-                  <ul className="space-y-2">
-                    {industry.problems.map((item) => (
-                      <li
-                        key={item}
-                        className="text-sm text-stone-600 leading-relaxed"
-                      >
-                        &mdash; {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div className="p-5 bg-stone-50 border border-stone-200 rounded-lg">
-                  <h3 className="text-sm font-semibold text-stone-900 uppercase tracking-wider mb-3">
-                    What I Help With
-                  </h3>
-                  <ul className="space-y-2">
-                    {industry.improvements.map((item) => (
-                      <li
-                        key={item}
-                        className="text-sm text-stone-600 leading-relaxed"
-                      >
-                        &bull; {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div className="p-5 bg-stone-50 border border-stone-200 rounded-lg">
-                  <h3 className="text-sm font-semibold text-stone-900 uppercase tracking-wider mb-3">
-                    Expected Outcomes
-                  </h3>
-                  <ul className="space-y-2">
-                    {industry.outcomes.map((item) => (
-                      <li
-                        key={item}
-                        className="text-sm text-stone-600 leading-relaxed"
-                      >
-                        &#10003; {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
+              <ul className="mt-6 space-y-2">
+                {category.fixes.map((fix) => (
+                  <li
+                    key={fix}
+                    className="flex items-start gap-2 text-sm text-stone-600"
+                  >
+                    <span className="text-amber-700 mt-0.5 flex-shrink-0">&#10003;</span>
+                    {fix}
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>
@@ -200,10 +123,15 @@ export default function IndustriesPage() {
       <section className="py-20 md:py-28 bg-stone-50 border-t border-stone-200">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <SectionHeading
-            title="See Your Team Here?"
-            description="Tell me what’s not working. I’ll tell you what I’d fix and what it would look like when it’s done."
+            title="See Your Operation Here?"
+            description="Tell me what's not working and I'll tell you which service fits and what the fix would look like."
           />
-          <Button href="/contact">Start a Conversation</Button>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Button href="/contact">Start the Conversation</Button>
+            <Button href="/services" variant="outline">
+              View Restaurant Services
+            </Button>
+          </div>
         </div>
       </section>
     </>
