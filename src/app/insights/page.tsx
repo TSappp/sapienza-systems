@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Insights",
   description:
-    "Insights from Sapienza Systems on operations, systems, documentation, workflow, and execution—from hospitality to biotech.",
+    "Insights on restaurant operations, training systems, SOPs, and shift execution from Sapienza Systems. Practical writing for restaurant owners, GMs, and bar managers.",
 };
 
 export default function InsightsPage() {

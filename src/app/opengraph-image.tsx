@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Sapienza Systems \u2014 Operational Systems Consulting";
+export const alt = "Sapienza Systems — Restaurant Operations Consultant Boston";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -41,7 +41,7 @@ export default function OgImage() {
             letterSpacing: "-0.02em",
           }}
         >
-          Operational Systems Consulting
+          Restaurant Operations Consultant
         </div>
         <div
           style={{
@@ -52,8 +52,8 @@ export default function OgImage() {
             maxWidth: 700,
           }}
         >
-          Better systems, documentation, and training for hospitality and
-          technical teams.
+          Practical systems for Boston restaurants and bars. Shift consistency,
+          training, SOPs, and manager execution.
         </div>
         <div
           style={{

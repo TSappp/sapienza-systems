@@ -8,8 +8,8 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-semibold text-lg mb-3">Sapienza Systems</h3>
             <p className="text-sm leading-relaxed">
-              Operational systems consulting for hospitality and technical teams.
-              Founded by Thomas Sapienza.
+              Restaurant operations systems consulting for Boston restaurants
+              and bars. Founded by Thomas Sapienza.
             </p>
           </div>
           <div>
@@ -19,8 +19,8 @@ export default function Footer() {
             <div className="space-y-2">
               {[
                 { href: "/about", label: "About" },
-                { href: "/services", label: "Services" },
-                { href: "/industries", label: "Industries" },
+                { href: "/services", label: "Restaurant Services" },
+                { href: "/industries", label: "What I Fix" },
                 { href: "/insights", label: "Insights" },
                 { href: "/contact", label: "Contact" },
               ].map((link) => (

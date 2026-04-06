@@ -18,16 +18,16 @@ const siteUrl = "https://www.sapienzasystems.com";
 
 export const metadata: Metadata = {
   title: {
-    default: "Sapienza Systems | Operational Systems Consulting",
+    default: "Sapienza Systems | Restaurant Operations Consultant Boston",
     template: "%s | Sapienza Systems",
   },
   description:
-    "Sapienza Systems helps hospitality and technical teams run smarter through better workflow, documentation, training, and execution. Founded by Thomas Sapienza.",
+    "Restaurant operations systems consultant in Boston. I help restaurants and bars build practical systems for shift consistency, training, SOPs, and manager execution. Founded by Thomas Sapienza.",
   metadataBase: new URL(siteUrl),
   openGraph: {
-    title: "Sapienza Systems | Operational Systems Consulting",
+    title: "Sapienza Systems | Restaurant Operations Consultant Boston",
     description:
-      "Sapienza Systems helps hospitality and technical teams run smarter through better workflow, documentation, training, and execution. Founded by Thomas Sapienza.",
+      "Restaurant operations systems consultant in Boston. I help restaurants and bars build practical systems for shift consistency, training, SOPs, and manager execution.",
     url: siteUrl,
     siteName: "Sapienza Systems",
     locale: "en_US",
@@ -35,9 +35,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sapienza Systems | Operational Systems Consulting",
+    title: "Sapienza Systems | Restaurant Operations Consultant Boston",
     description:
-      "Sapienza Systems helps hospitality and technical teams run smarter through better workflow, documentation, training, and execution. Founded by Thomas Sapienza.",
+      "Restaurant operations systems consultant in Boston. I help restaurants and bars build practical systems for shift consistency, training, SOPs, and manager execution.",
   },
   robots: {
     index: true,
