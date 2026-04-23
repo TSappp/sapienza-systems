@@ -55,7 +55,7 @@ export default function Footer() {
               </a>
             </div>
             <h4 className="text-white font-medium text-sm mt-6 mb-3 uppercase tracking-wider">
-              Projects
+              Tools
             </h4>
             <div className="space-y-2 text-sm">
               <a
@@ -65,14 +65,6 @@ export default function Footer() {
                 className="block hover:text-white transition-colors"
               >
                 Bartender Trainer
-              </a>
-              <a
-                href="https://philosophercouncil.net"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block hover:text-white transition-colors"
-              >
-                Philosopher Council
               </a>
             </div>
           </div>

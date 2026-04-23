@@ -244,7 +244,12 @@ export default function AboutPage() {
             title="Let's Talk About Your Operation"
             description="I work with restaurants, bars, and hospitality groups in Boston. Tell me what's not working and I'll tell you what I'd do about it."
           />
-          <Button href="/contact">Start the Conversation</Button>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Button href="/contact">Book a Free 15-Minute Ops Call</Button>
+            <Button href="/shift-systems-audit" variant="outline">
+              See the Shift Systems Audit
+            </Button>
+          </div>
         </div>
       </section>
     </>

@@ -127,9 +127,9 @@ export default function WhatIFixPage() {
             description="Tell me what's not working and I'll tell you which service fits and what the fix would look like."
           />
           <div className="flex flex-wrap justify-center gap-4">
-            <Button href="/contact">Start the Conversation</Button>
-            <Button href="/services" variant="outline">
-              View Restaurant Services
+            <Button href="/contact">Book a Free 15-Minute Ops Call</Button>
+            <Button href="/shift-systems-audit" variant="outline">
+              See the Shift Systems Audit
             </Button>
           </div>
         </div>

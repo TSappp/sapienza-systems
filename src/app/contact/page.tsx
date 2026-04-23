@@ -20,9 +20,9 @@ export default function ContactPage() {
             Tell Me What&rsquo;s Not Working
           </h1>
           <p className="mt-6 text-lg text-stone-300 max-w-2xl leading-relaxed">
-            You don&rsquo;t need a project brief. Just tell me what&rsquo;s
-            broken, what&rsquo;s slow, or what your team keeps getting wrong.
-            I&rsquo;ll tell you what I&rsquo;d do about it.
+            Tell me what keeps slipping, what your team keeps having to
+            re-explain, or where the shift breaks down. I&rsquo;ll tell you
+            what I&rsquo;d fix first and whether I&rsquo;m the right fit.
           </p>
         </div>
       </section>

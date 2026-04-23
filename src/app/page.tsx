@@ -1,10 +1,9 @@
 import Button from "@/components/Button";
 import SectionHeading from "@/components/SectionHeading";
-import { getAllPosts } from "@/lib/blog";
 import Link from "next/link";
 
 const problems = [
-  "Inconsistent shifts depending on who's working",
+  "Shifts run differently depending on who's working",
   "Sloppy handoffs between managers and teams",
   "Training that varies by trainer",
   "Opening and closing routines that drift",
@@ -30,9 +29,23 @@ const trustPoints = [
   "Practical AI tools that help managers move faster",
 ];
 
-export default function HomePage() {
-  const recentPosts = getAllPosts().slice(0, 3);
+const serviceCards = [
+  { title: "Shift Systems Audit", href: "/services#shift-systems-audit", description: "I observe a real shift and leave you with findings, priorities, and 3 custom tools." },
+  { title: "Manager Operating System Build", href: "/services#manager-operating-system", description: "Shift logs, pre-shift templates, recap workflows, issue tracking — everything managers need to stop repeating themselves." },
+  { title: "Restaurant SOP + Training Sprint", href: "/services#sop-training-sprint", description: "Role-specific SOPs, onboarding roadmaps, and training sign-offs that actually get used." },
+  { title: "Bar Systems Reset", href: "/services#bar-systems-reset", description: "Station standards, workflow audits, spec organization, and bartender training support." },
+  { title: "AI Tools for Restaurant Managers", href: "/services#ai-tools", description: "SOP generators, pre-shift note builders, and prompt libraries that cut admin time in half." },
+];
 
+const faqs = [
+  { q: "What kind of restaurants do you work with?", a: "Independent restaurants, cocktail bars, chef-owned concepts, multi-unit groups. Anywhere shifts need to run more consistently." },
+  { q: "How does the Shift Systems Audit work?", a: "I observe a real shift at your restaurant. Then I deliver written findings, a priority action plan, and 3 practical tools your team can use immediately." },
+  { q: "Do you work with bars specifically?", a: "Yes. I spent 14 years behind the bar across high-volume, craft, hotel, and nightlife settings. Bar systems are a specialty." },
+  { q: "Is the first conversation free?", a: "Yes. 15 minutes, no obligation. You tell me what's not working, I ask the right questions, and I'll tell you whether I'm the right fit." },
+  { q: "What do you actually leave behind?", a: "Practical tools: checklists, SOPs, training roadmaps, manager handoff logs, shift guides. One-page documents people can use during a real shift." },
+];
+
+export default function HomePage() {
   return (
     <>
       {/* Hero */}
@@ -41,35 +54,44 @@ export default function HomePage() {
           <p className="text-amber-400 text-sm font-semibold uppercase tracking-wider mb-4">
             Restaurant Operations Consultant &middot; Boston
           </p>
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-tight max-w-3xl">
-            Operations Systems for Boston Restaurants &amp; Bars
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight max-w-4xl">
+            Restaurant Operations Systems for Boston Teams That Need Cleaner
+            Shifts, Faster Training, and Better Follow-Through
           </h1>
           <p className="mt-6 text-lg md:text-xl text-stone-300 max-w-2xl leading-relaxed">
-            I help restaurants and bars turn tribal knowledge into practical
-            systems so shifts run cleaner, training gets faster, and standards
-            hold without constant owner involvement.
-          </p>
-          <p className="mt-4 text-sm text-stone-400 max-w-2xl leading-relaxed">
-            Built from 16 years inside restaurants and bars — and a systems
-            mindset focused on checklists, handoffs, training, documentation,
-            and manager execution.
+            I help owners, GMs, and bar managers turn messy handoffs,
+            inconsistent standards, and tribal knowledge into practical systems
+            their teams can actually use.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <Button href="/contact" variant="primary">
-              Book a Shift Systems Audit
+              Book a Free 15-Minute Ops Call
             </Button>
             <Button
-              href="/services"
+              href="/shift-systems-audit"
               variant="outline"
               className="border-white text-white hover:bg-white hover:text-stone-900"
             >
-              View Restaurant Services
+              See the Shift Systems Audit
             </Button>
           </div>
         </div>
       </section>
 
-      {/* What I Help Fix */}
+      {/* Trust Bar */}
+      <section className="bg-stone-800 text-stone-300 py-4">
+        <div className="max-w-6xl mx-auto px-6 flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs font-medium uppercase tracking-wider">
+          <span>Boston-Based</span>
+          <span className="text-stone-500">&middot;</span>
+          <span>16 Years in Restaurants</span>
+          <span className="text-stone-500">&middot;</span>
+          <span>14 Years Behind the Bar</span>
+          <span className="text-stone-500">&middot;</span>
+          <span>Practical Systems, Not Binders</span>
+        </div>
+      </section>
+
+      {/* What's Breaking Down */}
       <section className="py-20 md:py-28">
         <div className="max-w-6xl mx-auto px-6">
           <SectionHeading
@@ -79,10 +101,7 @@ export default function HomePage() {
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {problems.map((problem) => (
-              <div
-                key={problem}
-                className="p-5 bg-white border border-stone-200 rounded-lg"
-              >
+              <div key={problem} className="p-5 bg-white border border-stone-200 rounded-lg">
                 <p className="text-stone-700 text-sm font-medium leading-relaxed">
                   &mdash; {problem}
                 </p>
@@ -92,7 +111,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Entry Offer: Shift Systems Audit */}
+      {/* Shift Systems Audit */}
       <section className="py-20 md:py-28 bg-stone-900 text-white">
         <div className="max-w-4xl mx-auto px-6">
           <p className="text-amber-400 text-sm font-semibold uppercase tracking-wider mb-4">
@@ -102,10 +121,10 @@ export default function HomePage() {
             Shift Systems Audit
           </h2>
           <p className="mt-6 text-stone-300 text-lg leading-relaxed max-w-2xl">
-            Not sure what&rsquo;s actually slowing the operation down? I observe
-            a real shift, identify where execution breaks, and leave you with a
-            written action plan plus practical tools your team can use
-            immediately.
+            A practical review of where the operation breaks down, where
+            standards slip, and what should be fixed first. I observe a real
+            shift, document the friction, and leave you with an action plan
+            plus tools your team can use immediately.
           </p>
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-3">
             {[
@@ -123,7 +142,7 @@ export default function HomePage() {
           </div>
           <div className="mt-10">
             <Button href="/contact" variant="primary">
-              Ask About the Audit
+              Book a Free 15-Minute Ops Call
             </Button>
           </div>
         </div>
@@ -139,34 +158,19 @@ export default function HomePage() {
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {deliverables.map((item) => (
-              <div
-                key={item.title}
-                className="p-5 bg-white border border-stone-200 rounded-lg"
-              >
-                <h3 className="font-semibold text-stone-900 mb-1 text-sm">
-                  {item.title}
-                </h3>
-                <p className="text-stone-600 text-sm leading-relaxed">
-                  {item.description}
-                </p>
+              <div key={item.title} className="p-5 bg-white border border-stone-200 rounded-lg">
+                <h3 className="font-semibold text-stone-900 mb-1 text-sm">{item.title}</h3>
+                <p className="text-stone-600 text-sm leading-relaxed">{item.description}</p>
               </div>
             ))}
-          </div>
-          <div className="mt-10 text-center">
-            <Button href="/services" variant="outline">
-              See All Restaurant Services
-            </Button>
           </div>
         </div>
       </section>
 
-      {/* Why Restaurant Operators Hire Me */}
+      {/* Why Operators Hire Me */}
       <section className="py-20 md:py-28 bg-stone-50 border-y border-stone-200">
         <div className="max-w-4xl mx-auto px-6">
-          <SectionHeading
-            label="Why Me"
-            title="Why Restaurant Operators Hire Me"
-          />
+          <SectionHeading label="Why Me" title="Why Restaurant Operators Hire Me" />
           <div className="space-y-3 max-w-xl mx-auto">
             {trustPoints.map((point) => (
               <div key={point} className="flex items-start gap-3">
@@ -178,93 +182,53 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Proof: Bartender Trainer */}
+      {/* Services Overview */}
       <section className="py-20 md:py-28">
-        <div className="max-w-4xl mx-auto px-6">
+        <div className="max-w-6xl mx-auto px-6">
           <SectionHeading
-            label="Built From Real Experience"
-            title="I Build Tools, Not Just Documents"
+            label="Services"
+            title="How I Work With Restaurants"
           />
-          <div className="p-6 bg-white border border-stone-200 rounded-lg max-w-2xl mx-auto">
-            <div className="flex items-center justify-between mb-4">
-              <h3 className="text-lg font-semibold text-stone-900">
-                Bartender Trainer
-              </h3>
-              <span className="text-xs font-medium text-amber-700 bg-amber-50 px-2 py-1 rounded">
-                Hospitality
-              </span>
-            </div>
-            <p className="text-stone-600 text-sm leading-relaxed mb-4">
-              A training tool built from real bar operations experience to
-              improve recipe recall, standards retention, and day-to-day
-              consistency. Born from 14 years behind the bar and the belief that
-              training shouldn&rsquo;t stop after someone&rsquo;s first week.
-            </p>
-            <ul className="space-y-2 mb-6">
-              <li className="flex items-start gap-2 text-sm text-stone-600">
-                <span className="text-amber-700 mt-0.5 flex-shrink-0">&#10003;</span>
-                Reinforces drink specs and service standards through active recall
-              </li>
-              <li className="flex items-start gap-2 text-sm text-stone-600">
-                <span className="text-amber-700 mt-0.5 flex-shrink-0">&#10003;</span>
-                Built to work inside daily bar workflow, not as a separate chore
-              </li>
-              <li className="flex items-start gap-2 text-sm text-stone-600">
-                <span className="text-amber-700 mt-0.5 flex-shrink-0">&#10003;</span>
-                Demonstrates the same systems thinking I bring to every client engagement
-              </li>
-            </ul>
-            <a
-              href="https://bartender-trainer.replit.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block px-5 py-2.5 text-sm font-semibold border-2 border-stone-900 text-stone-900 rounded hover:bg-stone-900 hover:text-white transition-all"
-            >
-              Try Bartender Trainer &rarr;
-            </a>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {serviceCards.map((service) => (
+              <Link
+                key={service.title}
+                href={service.href}
+                className="group block p-6 bg-white border border-stone-200 rounded-lg hover:border-stone-300 hover:shadow-sm transition-all"
+              >
+                <h3 className="text-sm font-semibold text-stone-900 group-hover:text-amber-700 transition-colors">
+                  {service.title}
+                </h3>
+                <p className="mt-2 text-stone-600 text-sm leading-relaxed">
+                  {service.description}
+                </p>
+              </Link>
+            ))}
+          </div>
+          <div className="mt-10 text-center">
+            <Button href="/services" variant="outline">
+              See All Restaurant Services
+            </Button>
           </div>
         </div>
       </section>
 
-      {/* Featured Insights */}
-      {recentPosts.length > 0 && (
-        <section className="py-20 md:py-28 bg-stone-50 border-y border-stone-200">
-          <div className="max-w-6xl mx-auto px-6">
-            <SectionHeading
-              label="Insights"
-              title="Writing on What Makes Restaurants Run Well"
-            />
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {recentPosts.map((post) => (
-                <Link
-                  key={post.slug}
-                  href={`/insights/${post.slug}`}
-                  className="group block p-6 bg-white border border-stone-200 rounded-lg hover:border-stone-300 hover:shadow-sm transition-all"
-                >
-                  <div className="flex items-center gap-3 text-xs text-stone-500 mb-3">
-                    <time>{post.date}</time>
-                    <span>&middot;</span>
-                    <span>{post.readingTime}</span>
-                  </div>
-                  <h3 className="font-semibold text-stone-900 group-hover:text-amber-700 transition-colors leading-snug">
-                    {post.title}
-                  </h3>
-                  <p className="mt-2 text-stone-600 text-sm leading-relaxed line-clamp-3">
-                    {post.description}
-                  </p>
-                </Link>
-              ))}
-            </div>
-            <div className="mt-10 text-center">
-              <Button href="/insights" variant="outline">
-                All Insights
-              </Button>
-            </div>
+      {/* FAQ */}
+      <section className="py-20 md:py-28 bg-stone-50 border-y border-stone-200">
+        <div className="max-w-3xl mx-auto px-6">
+          <SectionHeading title="Common Questions" />
+          <div className="space-y-8">
+            {faqs.map((faq) => (
+              <div key={faq.q}>
+                <h3 className="font-semibold text-stone-900 text-sm">{faq.q}</h3>
+                <p className="mt-2 text-stone-600 text-sm leading-relaxed">{faq.a}</p>
+              </div>
+            ))}
           </div>
-        </section>
-      )}
+        </div>
+      </section>
 
-      {/* Contact CTA */}
+      {/* Final CTA */}
       <section className="py-20 md:py-28">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <SectionHeading
@@ -273,9 +237,9 @@ export default function HomePage() {
             description="Tell me what's breaking down and I'll tell you what I'd fix first."
           />
           <div className="flex flex-wrap justify-center gap-4">
-            <Button href="/contact">Start the Conversation</Button>
-            <Button href="/services" variant="outline">
-              View Restaurant Services
+            <Button href="/contact">Book a Free 15-Minute Ops Call</Button>
+            <Button href="/shift-systems-audit" variant="outline">
+              See the Shift Systems Audit
             </Button>
           </div>
         </div>

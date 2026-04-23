@@ -40,6 +40,7 @@ export default async function InsightPostPage({ params }: PageProps) {
 
   return (
     <>
+      {/* Header */}
       <section className="bg-stone-900 text-white">
         <div className="max-w-4xl mx-auto px-6 py-20 md:py-28">
           <Link
@@ -73,6 +74,8 @@ export default async function InsightPostPage({ params }: PageProps) {
           </div>
         </div>
       </section>
+
+      {/* Content */}
       <section className="py-16 md:py-24">
         <div className="max-w-3xl mx-auto px-6">
           <article
@@ -81,6 +84,8 @@ export default async function InsightPostPage({ params }: PageProps) {
           />
         </div>
       </section>
+
+      {/* Back link */}
       <section className="pb-20">
         <div className="max-w-3xl mx-auto px-6">
           <Link

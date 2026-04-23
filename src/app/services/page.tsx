@@ -161,9 +161,12 @@ export default function ServicesPage() {
                 </ul>
               </div>
 
-              <div className="mt-8">
-                <Button href="/contact" variant="outline">
-                  Ask About This Service
+              <div className="mt-8 flex flex-wrap gap-3">
+                <Button href="/contact" variant="primary">
+                  Book a Free 15-Minute Ops Call
+                </Button>
+                <Button href="/shift-systems-audit" variant="outline">
+                  See the Shift Systems Audit
                 </Button>
               </div>
             </div>
@@ -178,7 +181,7 @@ export default function ServicesPage() {
             title="Not Sure Which Service Fits?"
             description="Tell me what's breaking down in the operation and I'll tell you what I'd fix first."
           />
-          <Button href="/contact">Start the Conversation</Button>
+          <Button href="/contact">Book a Free 15-Minute Ops Call</Button>
         </div>
       </section>
     </>
