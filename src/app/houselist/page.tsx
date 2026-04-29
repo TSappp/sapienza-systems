@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import SectionHeading from "@/components/SectionHeading";
 import Button from "@/components/Button";
 
@@ -189,41 +190,39 @@ export default function HouseListPage() {
             description="A live hospitality system is more convincing when you can see the guest flow and manager view together."
             centered={false}
           />
-          {/*
-            TODO: Replace these placeholder panels with real screenshots.
-            Recommended assets:
-            1. Guest QR join page screenshot — mobile viewport, ~375x667px or similar
-            2. Visit verification / shift tools view — ~800x500px
-            3. Manager admin dashboard — ~800x500px
-            Drop images into public/images/houselist/ and update src attributes below.
-          */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               {
                 label: "Guest QR Join",
                 description: "Scan, tap, join — no app download required.",
+                src: "/images/houselist/guest-qr-join.png",
+                alt: "Guest QR join page for HouseList",
               },
               {
                 label: "Visit Verification",
                 description: "Staff confirms the visit. Data stays real.",
+                src: "/images/houselist/visit-verification.png",
+                alt: "HouseList shift-tools visit verification screen",
               },
               {
                 label: "Manager Dashboard",
                 description: "See who comes back, how often, and when.",
+                src: "/images/houselist/manager-dashboard.png",
+                alt: "HouseList manager dashboard",
               },
             ].map((panel) => (
               <div
                 key={panel.label}
                 className="bg-white border border-stone-200 rounded-lg overflow-hidden"
               >
-                {/* TODO: Replace this placeholder with <Image src="/images/houselist/..." /> */}
-                <div className="aspect-[4/3] bg-stone-100 flex items-center justify-center">
-                  <div className="text-center px-4">
-                    <div className="w-10 h-10 mx-auto mb-3 rounded-lg bg-stone-200 flex items-center justify-center">
-                      <span className="text-stone-400 text-lg">&#9634;</span>
-                    </div>
-                    <p className="text-xs text-stone-400 font-medium">Screenshot coming soon</p>
-                  </div>
+                <div className="relative aspect-[4/3] bg-stone-100">
+                  <Image
+                    src={panel.src}
+                    alt={panel.alt}
+                    fill
+                    className="object-cover object-top"
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                  />
                 </div>
                 <div className="p-4">
                   <p className="font-semibold text-stone-900 text-sm">{panel.label}</p>
