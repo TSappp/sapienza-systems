@@ -242,7 +242,7 @@ export default function HomePage() {
               </div>
             ))}
           </div>
-          <div className="mt-10 flex flex-wrap gap-4">
+          <div className="mt-10 flex flex-col sm:flex-row gap-4">
             <Button href="/houselist" variant="primary">
               View HouseList Live
             </Button>

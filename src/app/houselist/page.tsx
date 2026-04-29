@@ -80,7 +80,7 @@ export default function HouseListPage() {
             verified visits, controlled rewards, and better guest insight —
             without a bloated POS loyalty add-on.
           </p>
-          <div className="mt-10 flex flex-wrap gap-4">
+          <div className="mt-10 flex flex-col sm:flex-row gap-4">
             <Button
               href="https://houselist-demo.vercel.app"
               variant="primary"
@@ -180,6 +180,69 @@ export default function HouseListPage() {
         </div>
       </section>
 
+      {/* See the Pilot in Action */}
+      <section className="py-20 md:py-28 bg-stone-50 border-y border-stone-200">
+        <div className="max-w-4xl mx-auto px-6">
+          <SectionHeading
+            label="Live Preview"
+            title="See the Pilot in Action"
+            description="A live hospitality system is more convincing when you can see the guest flow and manager view together."
+            centered={false}
+          />
+          {/*
+            TODO: Replace these placeholder panels with real screenshots.
+            Recommended assets:
+            1. Guest QR join page screenshot — mobile viewport, ~375x667px or similar
+            2. Visit verification / shift tools view — ~800x500px
+            3. Manager admin dashboard — ~800x500px
+            Drop images into public/images/houselist/ and update src attributes below.
+          */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {[
+              {
+                label: "Guest QR Join",
+                description: "Scan, tap, join — no app download required.",
+              },
+              {
+                label: "Visit Verification",
+                description: "Staff confirms the visit. Data stays real.",
+              },
+              {
+                label: "Manager Dashboard",
+                description: "See who comes back, how often, and when.",
+              },
+            ].map((panel) => (
+              <div
+                key={panel.label}
+                className="bg-white border border-stone-200 rounded-lg overflow-hidden"
+              >
+                {/* TODO: Replace this placeholder with <Image src="/images/houselist/..." /> */}
+                <div className="aspect-[4/3] bg-stone-100 flex items-center justify-center">
+                  <div className="text-center px-4">
+                    <div className="w-10 h-10 mx-auto mb-3 rounded-lg bg-stone-200 flex items-center justify-center">
+                      <span className="text-stone-400 text-lg">&#9634;</span>
+                    </div>
+                    <p className="text-xs text-stone-400 font-medium">Screenshot coming soon</p>
+                  </div>
+                </div>
+                <div className="p-4">
+                  <p className="font-semibold text-stone-900 text-sm">{panel.label}</p>
+                  <p className="mt-1 text-stone-600 text-xs leading-relaxed">{panel.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="mt-8">
+            <Button
+              href="https://houselist-demo.vercel.app"
+              variant="primary"
+            >
+              Try the Live Demo
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* What This Proves */}
       <section className="py-20 md:py-28 bg-stone-900 text-white">
         <div className="max-w-4xl mx-auto px-6">
@@ -227,6 +290,24 @@ export default function HouseListPage() {
         </div>
       </section>
 
+      {/* What This Means for Your Operation */}
+      <section className="py-14 md:py-20">
+        <div className="max-w-3xl mx-auto px-6">
+          <div className="p-6 bg-stone-50 border border-stone-200 rounded-lg">
+            <p className="text-sm font-semibold text-stone-900 mb-2">
+              What this means for your operation
+            </p>
+            <p className="text-sm text-stone-600 leading-relaxed">
+              HouseList is one example of the kind of hospitality system I can
+              design when the problem calls for a practical tool, not just more
+              meetings. If your venue needs a guest-facing workflow, an internal
+              ops tool, or a pilot system that works on a real shift — I can
+              scope it, build it, and help your team put it into practice.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA */}
       <section className="py-20 md:py-28 bg-stone-50 border-t border-stone-200">
         <div className="max-w-3xl mx-auto px-6 text-center">
@@ -234,7 +315,7 @@ export default function HouseListPage() {
             title="Interested in a Pilot Like This?"
             description="Whether you want to explore HouseList for your venue or need a different hospitality systems build, let's talk."
           />
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button href="https://houselist-demo.vercel.app" variant="primary">
               View HouseList Live
             </Button>
