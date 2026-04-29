@@ -106,6 +106,7 @@ export default function ContactForm() {
             <option value="manager-os">Manager Operating System Build</option>
             <option value="bar-systems-reset">Bar Systems Reset</option>
             <option value="ai-tools">AI Tools for Restaurant Managers</option>
+            <option value="houselist-pilot">Hospitality Systems Pilot / HouseList</option>
             <option value="not-sure">Not sure yet</option>
           </select>
         </div>

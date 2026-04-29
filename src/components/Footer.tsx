@@ -59,12 +59,20 @@ export default function Footer() {
             </h4>
             <div className="space-y-2 text-sm">
               <a
+                href="https://houselist-demo.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block hover:text-white transition-colors"
+              >
+                HouseList — Guest-return pilot
+              </a>
+              <a
                 href="https://bartender-trainer.replit.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block hover:text-white transition-colors"
               >
-                Bartender Trainer
+                Bartender Trainer — Staff training tool
               </a>
             </div>
           </div>

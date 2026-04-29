@@ -213,6 +213,50 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Live Example — HouseList */}
+      <section className="py-20 md:py-28 bg-stone-900 text-white">
+        <div className="max-w-4xl mx-auto px-6">
+          <p className="text-amber-400 text-sm font-semibold uppercase tracking-wider mb-4">
+            Live Example
+          </p>
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+            A Live Hospitality Pilot I Built
+          </h2>
+          <p className="mt-6 text-stone-300 text-lg leading-relaxed max-w-2xl">
+            HouseList is a lightweight guest-return and reward system I built for
+            restaurants that don&rsquo;t want a bloated POS loyalty program.
+            Guests join by QR, visits are verified, rewards stay
+            staff-controlled, and managers get a clean dashboard that actually
+            helps the operation.
+          </p>
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {[
+              "QR join, no app download",
+              "Verified visits and staff-controlled rewards",
+              "Manager dashboard with actionable guest signals",
+              "Built for restaurant shifts, not generic loyalty software",
+            ].map((item) => (
+              <div key={item} className="flex items-start gap-2">
+                <span className="text-amber-400 mt-0.5 flex-shrink-0">&#10003;</span>
+                <span className="text-stone-300 text-sm">{item}</span>
+              </div>
+            ))}
+          </div>
+          <div className="mt-10 flex flex-wrap gap-4">
+            <Button href="/houselist" variant="primary">
+              View HouseList Live
+            </Button>
+            <Button
+              href="/contact"
+              variant="outline"
+              className="border-white text-white hover:bg-white hover:text-stone-900"
+            >
+              Ask About a Hospitality Systems Pilot
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
       <section className="py-20 md:py-28 bg-stone-50 border-y border-stone-200">
         <div className="max-w-3xl mx-auto px-6">

@@ -174,8 +174,44 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* Operational Tools & Pilots */}
+      <section className="py-20 md:py-28 bg-stone-50 border-y border-stone-200">
+        <div className="max-w-4xl mx-auto px-6">
+          <SectionHeading
+            label="Beyond Consulting"
+            title="Operational Tools & Pilots"
+            description="Some hospitality problems are best solved with systems, not more meetings. When the operation needs a practical internal tool, guest workflow, or pilot system, I can help design and build that too."
+            centered={false}
+          />
+          <div className="p-6 bg-white border border-stone-200 rounded-lg">
+            <div className="flex items-center gap-3 mb-2">
+              <h3 className="text-lg font-bold text-stone-900 tracking-tight">
+                HouseList
+              </h3>
+              <span className="text-xs font-medium text-amber-700 bg-amber-50 px-2 py-1 rounded">
+                Live Pilot
+              </span>
+            </div>
+            <p className="text-sm text-stone-600 leading-relaxed">
+              A lightweight QR-based guest-return pilot with verified visits,
+              staff-controlled rewards, and a manager dashboard. Built for
+              restaurants that want guest insight without bloated loyalty
+              software.
+            </p>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <Button href="/houselist" variant="primary">
+                View HouseList
+              </Button>
+              <Button href="/contact" variant="outline">
+                Ask About a Pilot
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
-      <section className="py-20 md:py-28 bg-stone-50 border-t border-stone-200">
+      <section className="py-20 md:py-28">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <SectionHeading
             title="Not Sure Which Service Fits?"
