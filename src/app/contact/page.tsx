@@ -27,7 +27,7 @@ export default function ContactPage() {
           <p className="mt-3 text-sm text-stone-400">
             Interested in a{" "}
             <a href="/houselist" className="text-amber-400 hover:text-amber-300 transition-colors">HouseList</a>-style
-            guest-return pilot or another hospitality systems build? Mention it here.
+            shift-intelligence pilot or another hospitality systems build? Mention it here.
           </p>
         </div>
       </section>

@@ -220,21 +220,20 @@ export default function HomePage() {
             Live Example
           </p>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-            A Live Hospitality Pilot I Built
+            A Live Shift-Intelligence Pilot I Built
           </h2>
           <p className="mt-6 text-stone-300 text-lg leading-relaxed max-w-2xl">
-            HouseList is a lightweight guest-return and reward system I built for
-            restaurants that don&rsquo;t want a bloated POS loyalty program.
-            Guests join by QR, visits are verified, rewards stay
-            staff-controlled, and managers get a clean dashboard that actually
-            helps the operation.
+            HouseList helps restaurant teams know who matters tonight. Guests
+            join by QR, visits are verified, rewards stay staff-controlled, and
+            managers get a live view of VIPs, reward-ready guests, at-risk
+            returns, and private feedback.
           </p>
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-3">
             {[
-              "QR join, no app download",
-              "Verified visits and staff-controlled rewards",
-              "Manager dashboard with actionable guest signals",
-              "Built for restaurant shifts, not generic loyalty software",
+              "Know who matters tonight",
+              "Staff-controlled hospitality gestures",
+              "Configurable VIP / regular / at-risk rules",
+              "Built for real shifts, not generic loyalty",
             ].map((item) => (
               <div key={item} className="flex items-start gap-2">
                 <span className="text-amber-400 mt-0.5 flex-shrink-0">&#10003;</span>
@@ -251,7 +250,7 @@ export default function HomePage() {
               variant="outline"
               className="border-white text-white hover:bg-white hover:text-stone-900"
             >
-              Ask About a Hospitality Systems Pilot
+              Ask About a Shift-Intelligence Pilot
             </Button>
           </div>
         </div>

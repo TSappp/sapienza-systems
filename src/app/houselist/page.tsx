@@ -4,64 +4,88 @@ import SectionHeading from "@/components/SectionHeading";
 import Button from "@/components/Button";
 
 export const metadata: Metadata = {
-  title: "HouseList — Guest-Return Pilot for Restaurants",
+  title: "HouseList — Shift Intelligence for Guest Recognition",
   description:
-    "HouseList is a lightweight QR-based guest-return system built for restaurants that want verified visits, staff-controlled rewards, and a clean manager dashboard — without a bloated POS loyalty add-on.",
+    "HouseList gives restaurants a live shift brief of VIPs, reward-ready guests, at-risk returns, and private feedback — so managers and staff know who to recognize tonight.",
 };
 
-const problems = [
+const revenueOutcomes = [
   {
-    title: "Punch cards",
-    issue: "Lost, faked, forgotten. No data, no insight, no follow-up.",
+    title: "Increase Second and Third Visits",
+    description:
+      "Second and third visits are where a first-time guest starts becoming a regular. HouseList makes those return moments visible and actionable.",
   },
   {
-    title: "Generic QR forms",
-    issue:
-      "Collect an email, maybe. No visit tracking, no return behavior, no reason for the guest to come back.",
+    title: "Recover At-Risk Regulars",
+    description:
+      "When a regular stops coming in, the manager sees it before it becomes permanent. A well-timed gesture can bring them back.",
   },
   {
-    title: "POS loyalty add-ons",
-    issue:
-      "Expensive, bloated, built for chains. Most independent restaurants pay for features nobody uses and dashboards nobody checks.",
+    title: "Turn Private Feedback Into Manager Action",
+    description:
+      "Guests leave private ratings and notes. Managers see unresolved feedback before the next visit — not after a bad review goes public.",
+  },
+  {
+    title: "Track Reward-to-Return Conversion",
+    description:
+      "Know which hospitality gestures actually drive return visits, and which ones don\u2019t move the needle.",
+  },
+  {
+    title: "Help Staff Recognize Valuable Guests",
+    description:
+      "Staff see who matters tonight before service starts — not after the regular already left unrecognized.",
+  },
+  {
+    title: "Estimate Repeat Revenue From Verified Returns",
+    description:
+      "Verified visits multiplied by average spend gives managers a real number for how much repeat business the system is driving.",
   },
 ];
 
-const features = [
-  {
-    title: "QR Join, No App Download",
-    description:
-      "Guest scans a QR code at the venue and joins in seconds. No app store, no account creation friction.",
-  },
-  {
-    title: "Verified Visits",
-    description:
-      "Visits are confirmed through venue check-in — not self-reported, not GPS-guessed. The data is real.",
-  },
-  {
-    title: "Staff-Controlled Rewards",
-    description:
-      "Managers and bartenders decide when to reward and what to offer. No automatic discount spirals.",
-  },
-  {
-    title: "Manager Dashboard",
-    description:
-      "See who comes back, how often, and when. Actionable guest signals — not vanity metrics.",
-  },
+const tonightExamples = [
+  "VIP regular in house \u2014 greet by name, offer their usual",
+  "Reward-ready guest \u2014 manager approves a hospitality gesture",
+  "At-risk regular returning after a gap \u2014 recognize the comeback",
+  "First-time guest worth capturing well \u2014 make the first impression count",
+  "Private feedback that needs attention \u2014 resolve before the next visit",
 ];
 
-const steps = [
-  { step: "01", title: "Guest scans QR at the venue", description: "Table tent, check presenter, bar card — wherever it fits the flow." },
-  { step: "02", title: "Quick join — no app, no friction", description: "Name, phone or email. Done in seconds." },
-  { step: "03", title: "Visit gets verified on-site", description: "Staff or location-based confirmation. No gaming the system." },
-  { step: "04", title: "Return visits tracked automatically", description: "The system knows who comes back and how often." },
-  { step: "05", title: "Rewards triggered by staff, not software", description: "Manager or bartender decides when to reward — keeps it personal, keeps it controlled." },
+const staffActions = [
+  "Greet a regular by name",
+  "Offer the guest\u2019s usual drink",
+  "Verify a return visit",
+  "Redeem a manager-approved gesture",
+  "Flag unresolved feedback",
+  "Complete a staff action after it is handled",
+];
+
+const pilotMetrics = [
+  "QR join rate",
+  "Second-visit conversion",
+  "Third-visit conversion",
+  "Verified returning guests",
+  "At-risk guests recovered",
+  "Reward-to-return conversion",
+  "Staff action completion",
+  "Private feedback resolved",
+  "Estimated repeat revenue",
+];
+
+const pilotIncludes = [
+  "Setup and configuration",
+  "QR placement plan for your venue",
+  "Manager training",
+  "Tonight rules configuration",
+  "Staff workflow setup",
+  "Weekly review during the pilot",
+  "Pilot success metrics and reporting",
 ];
 
 const audiences = [
-  "Independent restaurants building regular guest relationships",
+  "Independent restaurants that want to know who matters tonight",
   "Cocktail bars and hotel bars that want repeat visibility without a points program",
-  "Chef-owned concepts that care about guest experience but hate bloated software",
-  "Hospitality groups piloting a lightweight guest-return system before committing to enterprise tools",
+  "Chef-owned concepts that care about guest recognition but hate bloated software",
+  "Small restaurant groups piloting shift intelligence before committing to enterprise tools",
 ];
 
 export default function HouseListPage() {
@@ -71,15 +95,16 @@ export default function HouseListPage() {
       <section className="bg-stone-900 text-white">
         <div className="max-w-4xl mx-auto px-6 py-20 md:py-28">
           <p className="text-amber-400 text-sm font-semibold uppercase tracking-wider mb-4">
-            Live Hospitality Pilot
+            Shift Intelligence for Restaurants
           </p>
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight leading-tight max-w-3xl">
-            HouseList: A Lightweight Guest-Return Pilot for Restaurants
+            Know Who Matters Tonight — and Turn More Guests Into Regulars
           </h1>
           <p className="mt-6 text-lg text-stone-300 max-w-2xl leading-relaxed">
-            A live hospitality system I built for venues that want QR join,
-            verified visits, controlled rewards, and better guest insight —
-            without a bloated POS loyalty add-on.
+            HouseList gives restaurants a live shift brief of VIPs, reward-ready
+            guests, at-risk returns, first-time visitors, and private feedback —
+            so managers and staff know exactly who to recognize and what action
+            to take.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4">
             <Button
@@ -105,12 +130,28 @@ export default function HouseListPage() {
         <div className="max-w-4xl mx-auto px-6">
           <SectionHeading
             label="The Problem"
-            title="Why Most Restaurant Loyalty Fails"
-            description="Punch cards are too dumb. POS loyalty is too bloated. Generic QR forms collect emails nobody uses. Restaurants deserve something in between."
+            title="Most Restaurants Have No Idea Who Matters Tonight"
+            description="Punch cards are dead. POS loyalty is bloated. Generic QR forms collect emails nobody acts on. And reservation systems only see guests who book — not the regulars who walk in."
             centered={false}
           />
           <div className="space-y-6">
-            {problems.map((p) => (
+            {[
+              {
+                title: "No guest recognition on shift",
+                issue:
+                  "Staff don\u2019t know who\u2019s a first-timer, who\u2019s a regular, or who hasn\u2019t been back in months. Every guest gets the same generic service.",
+              },
+              {
+                title: "Rewards without intelligence",
+                issue:
+                  "Loyalty programs hand out points but never tell the manager which guests are worth a personal gesture tonight.",
+              },
+              {
+                title: "Feedback that goes nowhere",
+                issue:
+                  "Private guest feedback sits in a dashboard nobody checks. By the time someone sees it, the guest has already decided not to come back.",
+              },
+            ].map((p) => (
               <div
                 key={p.title}
                 className="p-5 bg-white border border-stone-200 rounded-lg"
@@ -127,25 +168,89 @@ export default function HouseListPage() {
         </div>
       </section>
 
-      {/* What HouseList Does */}
+      {/* What the Manager Sees Before Service */}
+      <section className="py-20 md:py-28 bg-stone-900 text-white">
+        <div className="max-w-4xl mx-auto px-6">
+          <p className="text-amber-400 text-sm font-semibold uppercase tracking-wider mb-4">
+            Who Matters Tonight
+          </p>
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight max-w-2xl">
+            What the Manager Sees Before Service
+          </h2>
+          <p className="mt-6 text-stone-300 text-lg leading-relaxed max-w-2xl">
+            Instead of another generic dashboard, HouseList creates a shift view
+            of the guests worth recognizing, recovering, rewarding, or watching
+            tonight.
+          </p>
+          <div className="mt-8 space-y-3">
+            {tonightExamples.map((example) => (
+              <div key={example} className="flex items-start gap-2">
+                <span className="text-amber-400 mt-0.5 flex-shrink-0">
+                  &#10003;
+                </span>
+                <span className="text-stone-300 text-sm">{example}</span>
+              </div>
+            ))}
+          </div>
+          <div className="mt-10">
+            <Button
+              href="https://houselist-demo.vercel.app"
+              variant="primary"
+            >
+              See the Live Demo
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* What Staff Actually Do */}
+      <section className="py-20 md:py-28">
+        <div className="max-w-4xl mx-auto px-6">
+          <SectionHeading
+            label="On the Floor"
+            title="What Staff Actually Do"
+            description="HouseList should not become another screen people ignore. The value comes from turning guest intelligence into simple staff actions."
+            centered={false}
+          />
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {staffActions.map((action) => (
+              <div
+                key={action}
+                className="flex items-start gap-2 p-4 bg-white border border-stone-200 rounded-lg"
+              >
+                <span className="text-amber-700 mt-0.5 flex-shrink-0">
+                  &#10003;
+                </span>
+                <span className="text-stone-700 text-sm">{action}</span>
+              </div>
+            ))}
+          </div>
+          <p className="mt-6 text-xs text-stone-400">
+            Designed to support actions like these during real service. Feature
+            availability may vary during early pilot.
+          </p>
+        </div>
+      </section>
+
+      {/* Revenue Outcomes */}
       <section className="py-20 md:py-28 bg-stone-50 border-y border-stone-200">
         <div className="max-w-4xl mx-auto px-6">
           <SectionHeading
-            label="What It Does"
-            title="A Guest-Return System Built for Real Restaurants"
+            label="Revenue Impact"
+            title="Revenue Outcomes This Is Built to Drive"
             centered={false}
           />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {features.map((f) => (
+            {revenueOutcomes.map((outcome) => (
               <div
-                key={f.title}
+                key={outcome.title}
                 className="p-5 bg-white border border-stone-200 rounded-lg"
               >
                 <h3 className="font-semibold text-stone-900 text-sm mb-1">
-                  {f.title}
+                  {outcome.title}
                 </h3>
                 <p className="text-stone-600 text-sm leading-relaxed">
-                  {f.description}
+                  {outcome.description}
                 </p>
               </div>
             ))}
@@ -153,60 +258,35 @@ export default function HouseListPage() {
         </div>
       </section>
 
-      {/* How It Works on Shift */}
-      <section className="py-20 md:py-28">
-        <div className="max-w-3xl mx-auto px-6">
-          <SectionHeading
-            label="On Shift"
-            title="How It Works During a Real Shift"
-            centered={false}
-          />
-          <div className="space-y-6">
-            {steps.map((item) => (
-              <div key={item.step} className="flex gap-5">
-                <div className="flex-shrink-0 text-amber-700 font-bold text-sm pt-1">
-                  {item.step}
-                </div>
-                <div>
-                  <h3 className="font-semibold text-stone-900 text-sm">
-                    {item.title}
-                  </h3>
-                  <p className="mt-1 text-stone-600 text-sm leading-relaxed">
-                    {item.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* See the Pilot in Action */}
-      <section className="py-20 md:py-28 bg-stone-50 border-y border-stone-200">
+      <section className="py-20 md:py-28">
         <div className="max-w-4xl mx-auto px-6">
           <SectionHeading
             label="Live Preview"
             title="See the Pilot in Action"
-            description="A live hospitality system is more convincing when you can see the guest flow and manager view together."
+            description="A shift-intelligence system is more convincing when you can see the guest flow and manager view together."
             centered={false}
           />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               {
                 label: "Guest QR Join",
-                description: "Scan, tap, join — no app download required.",
+                description:
+                  "Scan, tap, join — no app download required.",
                 src: "/images/houselist/guest-qr-join.png",
                 alt: "Guest QR join page for HouseList",
               },
               {
-                label: "Visit Verification",
-                description: "Staff confirms the visit. Data stays real.",
+                label: "Shift Tools",
+                description:
+                  "Staff verify visits and execute manager-approved actions.",
                 src: "/images/houselist/visit-verification.png",
                 alt: "HouseList shift-tools visit verification screen",
               },
               {
                 label: "Manager Dashboard",
-                description: "See who comes back, how often, and when.",
+                description:
+                  "See who matters tonight, track returns, review feedback.",
                 src: "/images/houselist/manager-dashboard.png",
                 alt: "HouseList manager dashboard",
               },
@@ -225,8 +305,12 @@ export default function HouseListPage() {
                   />
                 </div>
                 <div className="p-4">
-                  <p className="font-semibold text-stone-900 text-sm">{panel.label}</p>
-                  <p className="mt-1 text-stone-600 text-xs leading-relaxed">{panel.description}</p>
+                  <p className="font-semibold text-stone-900 text-sm">
+                    {panel.label}
+                  </p>
+                  <p className="mt-1 text-stone-600 text-xs leading-relaxed">
+                    {panel.description}
+                  </p>
                 </div>
               </div>
             ))}
@@ -242,35 +326,109 @@ export default function HouseListPage() {
         </div>
       </section>
 
-      {/* What This Proves */}
+      {/* How a Pilot Should Be Measured */}
+      <section className="py-20 md:py-28 bg-stone-50 border-y border-stone-200">
+        <div className="max-w-4xl mx-auto px-6">
+          <SectionHeading
+            label="Pilot Metrics"
+            title="How a Pilot Should Be Measured"
+            description="A serious pilot needs serious metrics. These are the numbers that tell you whether HouseList is working for your venue."
+            centered={false}
+          />
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+            {pilotMetrics.map((metric) => (
+              <div
+                key={metric}
+                className="flex items-start gap-2 p-4 bg-white border border-stone-200 rounded-lg"
+              >
+                <span className="text-amber-700 mt-0.5 flex-shrink-0">
+                  &#10003;
+                </span>
+                <span className="text-stone-700 text-sm">{metric}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Competitive Positioning */}
+      <section className="py-20 md:py-28">
+        <div className="max-w-4xl mx-auto px-6">
+          <SectionHeading
+            label="How It Fits"
+            title="Why Not Just Toast, SevenRooms, Resy, or OpenTable?"
+            centered={false}
+          />
+          <div className="space-y-6">
+            <div className="p-5 bg-white border border-stone-200 rounded-lg">
+              <h3 className="font-semibold text-stone-900 text-sm">
+                Toast and POS loyalty
+              </h3>
+              <p className="mt-1 text-stone-600 text-sm leading-relaxed">
+                Strong for POS-tied rewards and transaction data. Less useful for
+                shift-level guest recognition and staff-controlled hospitality
+                gestures.
+              </p>
+            </div>
+            <div className="p-5 bg-white border border-stone-200 rounded-lg">
+              <h3 className="font-semibold text-stone-900 text-sm">
+                SevenRooms, Resy, and OpenTable
+              </h3>
+              <p className="mt-1 text-stone-600 text-sm leading-relaxed">
+                Strong for reservation management and guest data aggregation.
+                Less useful for walk-in regulars, bar guests, and the kind of
+                shift-level staff action that independent venues care about.
+              </p>
+            </div>
+            <div className="p-5 bg-stone-900 text-white rounded-lg">
+              <h3 className="font-semibold text-sm">HouseList</h3>
+              <p className="mt-1 text-stone-300 text-sm leading-relaxed">
+                Built for a narrower operational wedge: help the team know who to
+                recognize tonight, what action to take, and whether those actions
+                are driving return visits. Lightweight, shift-focused, and
+                staff-controlled.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Start With a 60-Day Pilot */}
       <section className="py-20 md:py-28 bg-stone-900 text-white">
         <div className="max-w-4xl mx-auto px-6">
           <p className="text-amber-400 text-sm font-semibold uppercase tracking-wider mb-4">
-            What This Proves
+            Get Started
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight max-w-2xl">
-            I Don&rsquo;t Just Advise on Operations — I Build the Systems Too
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+            Start With a 60-Day HouseList Pilot
           </h2>
           <p className="mt-6 text-stone-300 text-lg leading-relaxed max-w-2xl">
-            Most consultants write recommendations. I write recommendations,
-            then build the tools. HouseList is a working example: I identified a
-            gap in how restaurants handle guest returns, designed a system that
-            fits real shift workflows, and built it.
+            Every pilot includes setup, training, and weekly review so the system
+            actually gets used on shift — not just installed and forgotten.
           </p>
-          <p className="mt-4 text-stone-400 text-sm leading-relaxed max-w-2xl">
-            If your operation needs a practical internal tool, a guest-facing
-            workflow, or a pilot system that actually works on shift — that is
-            something I can help with.
+          <div className="mt-8 space-y-2">
+            {pilotIncludes.map((item) => (
+              <div key={item} className="flex items-start gap-2">
+                <span className="text-amber-400 mt-0.5 flex-shrink-0">
+                  &#10003;
+                </span>
+                <span className="text-stone-300 text-sm">{item}</span>
+              </div>
+            ))}
+          </div>
+          <p className="mt-8 text-stone-400 text-sm leading-relaxed max-w-xl">
+            Pilot pricing depends on venue size and setup needs. Most pilots
+            start with a setup phase and a monthly venue fee.
           </p>
-          <div className="mt-10">
+          <div className="mt-8">
             <Button href="/contact" variant="primary">
-              Book a Free 15-Minute Ops Call
+              Ask About a HouseList Pilot
             </Button>
           </div>
         </div>
       </section>
 
-      {/* Who It&rsquo;s For */}
+      {/* Who It's For */}
       <section className="py-20 md:py-28">
         <div className="max-w-4xl mx-auto px-6">
           <SectionHeading
@@ -289,7 +447,7 @@ export default function HouseListPage() {
         </div>
       </section>
 
-      {/* What This Means for Your Operation */}
+      {/* What This Proves */}
       <section className="py-14 md:py-20">
         <div className="max-w-3xl mx-auto px-6">
           <div className="p-6 bg-stone-50 border border-stone-200 rounded-lg">
@@ -299,9 +457,9 @@ export default function HouseListPage() {
             <p className="text-sm text-stone-600 leading-relaxed">
               HouseList is one example of the kind of hospitality system I can
               design when the problem calls for a practical tool, not just more
-              meetings. If your venue needs a guest-facing workflow, an internal
-              ops tool, or a pilot system that works on a real shift — I can
-              scope it, build it, and help your team put it into practice.
+              meetings. I help restaurants fix operating problems, and when the
+              right problem calls for a system instead of a checklist, I can
+              build that too.
             </p>
           </div>
         </div>
@@ -311,15 +469,15 @@ export default function HouseListPage() {
       <section className="py-20 md:py-28 bg-stone-50 border-t border-stone-200">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <SectionHeading
-            title="Interested in a Pilot Like This?"
-            description="Whether you want to explore HouseList for your venue or need a different hospitality systems build, let's talk."
+            title="Ready to Know Who Matters Tonight?"
+            description="Whether you want to pilot HouseList at your venue or need a different hospitality systems build, let's talk."
           />
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button href="https://houselist-demo.vercel.app" variant="primary">
               View HouseList Live
             </Button>
             <Button href="/contact" variant="outline">
-              Ask About a Hospitality Systems Pilot
+              Ask About a HouseList Pilot
             </Button>
           </div>
         </div>

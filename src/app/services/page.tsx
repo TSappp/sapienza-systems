@@ -193,10 +193,10 @@ export default function ServicesPage() {
               </span>
             </div>
             <p className="text-sm text-stone-600 leading-relaxed">
-              A lightweight QR-based guest-return pilot with verified visits,
-              staff-controlled rewards, and a manager dashboard. Built for
-              restaurants that want guest insight without bloated loyalty
-              software.
+              Shift intelligence for guest recognition and repeat revenue.
+              Managers get a live brief of VIPs, reward-ready guests, and
+              at-risk returns. Staff get simple actions they can execute during
+              service. Pilot metrics track what actually drives guests back.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Button href="/houselist" variant="primary">
