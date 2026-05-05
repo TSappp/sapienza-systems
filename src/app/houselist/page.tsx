@@ -55,8 +55,9 @@ const staffActions = [
   "Offer the guest\u2019s usual drink",
   "Verify a return visit",
   "Redeem a manager-approved gesture",
-  "Flag unresolved feedback",
-  "Complete a staff action after it is handled",
+  "Address private feedback",
+  "Add a note to the guest record",
+  "Mark the action handled",
 ];
 
 const pilotMetrics = [
@@ -76,7 +77,8 @@ const pilotIncludes = [
   "QR placement plan for your venue",
   "Manager training",
   "Tonight rules configuration",
-  "Staff workflow setup",
+  "Staff action workflow setup",
+  "Printable shift brief",
   "Weekly review during the pilot",
   "Pilot success metrics and reporting",
 ];
@@ -101,10 +103,10 @@ export default function HouseListPage() {
             Know Who Matters Tonight — and Turn More Guests Into Regulars
           </h1>
           <p className="mt-6 text-lg text-stone-300 max-w-2xl leading-relaxed">
-            HouseList gives restaurants a live shift brief of VIPs, reward-ready
-            guests, at-risk returns, first-time visitors, and private feedback —
-            so managers and staff know exactly who to recognize and what action
-            to take.
+            HouseList gives restaurants a live shift view of VIPs, reward-ready
+            guests, at-risk returns, first-time visitors, private feedback, and
+            next-best staff actions — so managers know who to recognize, what to
+            do, and what impact it created.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4">
             <Button
@@ -161,6 +163,43 @@ export default function HouseListPage() {
                 </h3>
                 <p className="mt-1 text-stone-600 text-sm leading-relaxed">
                   {p.issue}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* What HouseList Does */}
+      <section className="py-20 md:py-28 bg-stone-50 border-y border-stone-200">
+        <div className="max-w-4xl mx-auto px-6">
+          <SectionHeading
+            label="The System"
+            title="What HouseList Does"
+            description="Restaurants don&rsquo;t need another loyalty dashboard. They need a shift tool that helps staff recognize the right guests and act before the opportunity is missed."
+            centered={false}
+          />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {[
+              { title: "QR Guest Join", description: "Guests scan a QR code at the venue and join in seconds. No app download, no account friction." },
+              { title: "Verified Visits", description: "Visits are confirmed through venue check-in — not self-reported, not GPS-guessed. The data is real." },
+              { title: "Who Matters Tonight", description: "A live shift view of VIPs, regulars, at-risk returns, first-timers, reward-ready guests, and unresolved feedback." },
+              { title: "Configurable Rules", description: "Define what makes a VIP, when a regular becomes at-risk, and when a guest becomes reward-eligible. Your rules, not a default algorithm." },
+              { title: "Next Best Action", description: "Staff see what to do for each guest — greet by name, offer the usual, verify a visit, redeem a gesture — prompted by the system." },
+              { title: "One-Tap Staff Actions", description: "Staff complete actions directly in the shift tools. Managers see what was done and what was missed." },
+              { title: "Staff-Controlled Gestures", description: "Managers approve hospitality gestures. No automatic discount spirals. The team stays in control." },
+              { title: "Printable Tonight Brief", description: "A concise shift brief with top guests, next-best actions, checkboxes, and manager notes. Print it, hand it out, run the shift." },
+              { title: "Repeat Revenue Signals", description: "Verified visits multiplied by average spend gives managers a directional number for repeat business the system is driving." },
+            ].map((f) => (
+              <div
+                key={f.title}
+                className="p-5 bg-white border border-stone-200 rounded-lg"
+              >
+                <h3 className="font-semibold text-stone-900 text-sm mb-1">
+                  {f.title}
+                </h3>
+                <p className="text-stone-600 text-sm leading-relaxed">
+                  {f.description}
                 </p>
               </div>
             ))}
@@ -255,6 +294,10 @@ export default function HouseListPage() {
               </div>
             ))}
           </div>
+          <p className="mt-6 text-xs text-stone-400">
+            Revenue estimates are directional until connected to POS or sales
+            exports.
+          </p>
         </div>
       </section>
 
@@ -267,8 +310,22 @@ export default function HouseListPage() {
             description="A shift-intelligence system is more convincing when you can see the guest flow and manager view together."
             centered={false}
           />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
             {[
+              {
+                label: "Who Matters Tonight",
+                description:
+                  "A live shift view of VIPs, at-risk returns, and reward-ready guests.",
+                src: "/images/houselist/manager-dashboard.png",
+                alt: "HouseList Who Matters Tonight dashboard view",
+              },
+              {
+                label: "Next Best Action",
+                description:
+                  "Staff see what to do for each guest and complete it in one tap.",
+                src: "/images/houselist/visit-verification.png",
+                alt: "HouseList next best action shift tools",
+              },
               {
                 label: "Guest QR Join",
                 description:
@@ -277,18 +334,16 @@ export default function HouseListPage() {
                 alt: "Guest QR join page for HouseList",
               },
               {
-                label: "Shift Tools",
+                label: "Printable Tonight Brief",
                 description:
-                  "Staff verify visits and execute manager-approved actions.",
-                src: "/images/houselist/visit-verification.png",
-                alt: "HouseList shift-tools visit verification screen",
-              },
-              {
-                label: "Manager Dashboard",
-                description:
-                  "See who matters tonight, track returns, review feedback.",
+                  "Top guests, actions, checkboxes — printed for the shift.",
+                /*
+                  TODO: Replace with real screenshot when available.
+                  Drop image at: public/images/houselist/tonight-brief-print.png
+                  Then update src below.
+                */
                 src: "/images/houselist/manager-dashboard.png",
-                alt: "HouseList manager dashboard",
+                alt: "HouseList printable Tonight Brief",
               },
             ].map((panel) => (
               <div
@@ -301,7 +356,7 @@ export default function HouseListPage() {
                     alt={panel.alt}
                     fill
                     className="object-cover object-top"
-                    sizes="(max-width: 768px) 100vw, 33vw"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   />
                 </div>
                 <div className="p-4">

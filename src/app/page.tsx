@@ -224,14 +224,16 @@ export default function HomePage() {
           </h2>
           <p className="mt-6 text-stone-300 text-lg leading-relaxed max-w-2xl">
             HouseList helps restaurant teams know who matters tonight. Guests
-            join by QR, visits are verified, rewards stay staff-controlled, and
-            managers get a live view of VIPs, reward-ready guests, at-risk
-            returns, and private feedback.
+            join by QR, visits are verified, and managers get a live view of
+            VIPs, reward-ready guests, at-risk returns, private feedback, and
+            staff actions.
           </p>
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-3">
             {[
               "Know who matters tonight",
+              "Next-best actions for staff",
               "Staff-controlled hospitality gestures",
+              "Directional repeat-revenue signals",
               "Configurable VIP / regular / at-risk rules",
               "Built for real shifts, not generic loyalty",
             ].map((item) => (

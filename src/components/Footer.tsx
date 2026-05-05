@@ -64,7 +64,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="block hover:text-white transition-colors"
               >
-                HouseList — Guest-return pilot
+                HouseList — Shift-intelligence pilot
               </a>
               <a
                 href="https://bartender-trainer.replit.app/"

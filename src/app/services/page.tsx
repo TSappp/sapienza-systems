@@ -195,8 +195,9 @@ export default function ServicesPage() {
             <p className="text-sm text-stone-600 leading-relaxed">
               Shift intelligence for guest recognition and repeat revenue.
               Managers get a live brief of VIPs, reward-ready guests, and
-              at-risk returns. Staff get simple actions they can execute during
-              service. Pilot metrics track what actually drives guests back.
+              at-risk returns. Staff get next-best actions they can execute
+              during service. Includes a printable Tonight Brief and pilot
+              metrics that track what actually drives guests back.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Button href="/houselist" variant="primary">
